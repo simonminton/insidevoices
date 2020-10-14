@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Respondent;
 use Illuminate\Http\Request;
 use App\Models\Company;
+use App\Models\Response;
 use App\Models\Category;
 use Inertia\Inertia;
 
@@ -44,7 +45,25 @@ class RespondentController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $respondent = new Respondent();
+        if($request->company_name == "not-on-list") {
+            $company = new Company();
+            $company->name = $request->company_new_name;
+            $company->save();
+        }
+        else {
+            $company = Company::find($request->company_name);
+        }
+        $respondent->company_id = $company->id;
+        $respondent->save();
+        foreach($request->responses as $key => $answer) {
+            $response = new Response();
+            $response->respondent_id = $respondent->id;
+            $response->question_id = $key;
+            $response->answer = $answer;
+            $response->save();
+        }
+        return "All received, thanks";
     }
 
     /**

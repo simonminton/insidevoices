@@ -15,7 +15,7 @@ class CreateRespondentsTable extends Migration
     {
         Schema::create('respondents', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('name');
+            $table->uuid('company_id')->index();
             $table->softDeletes();
             $table->timestamps();
         });
