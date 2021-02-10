@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>InsideVoices</title>
+
+        <!-- Fonts -->
+        
+        <link rel="stylesheet" href="https://use.typekit.net/wsk2kkl.css">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    </head>
+    <body class="antialiased font-sans font-light">
+        <!-- Home page main section -->
+        
+       
+         <div class="relative bg-black flex flex-col w-full h-screen bg-cover bg-right" style="background-image: url('/images/how-it-works-bg.jpg')">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black"></div>
+             <x-navigation></x-navigation>
+            <div class="container relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
+                <div class="w-1/2">
+                    <h1 class="font-title text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share Your Story</h1>
+                    <p class="text-white text-xl w-full md:w-2/3 mb-12">Whether your employer is good, bad or middle-of-the-road, we want to hear about it. Review your organization so we can see how they measure up against others. It’s time to amplify your voice.</p>
+                    <x-share-button-large></x-share-button-large>
+                </div>
+            </div>
+         </div>
+
+         <div class="relative bg-white flex flex-col w-full bg-cover">
+            <div class="container mx-auto flex-row flex-wrap flex py-32">
+                <div class="w-full">
+                    <h1 class="font-title text-6xl mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>
+                </div>
+                <div class="w-1/3">
+                    <div class="w-24 h-24 bg-green mb-12"></div>
+                    <h3 class="font-title font-bold mb-8 text-3xl">Read</h3>
+                    <p class="text-black text-xl w-4/5">Take a look at other people's stories by browsing our Organisations page. You can upvote stories that you find</p>
+                </div>
+                 <div class="w-1/3">
+                    <div class="w-24 h-24 bg-green mb-12"></div>
+                    <h3 class="font-title font-bold mb-8 text-3xl">Write</h3>
+                    <p class="text-black text-xl w-4/5">Review your employer by answering 6 multiple-choice questions. We'll provide space for you to tell us what's driving</p>
+                </div>
+                 <div class="w-1/3">
+                    <div class="w-24 h-24 bg-green mb-12"></div>
+                    <h3 class="font-title font-bold mb-8 text-3xl">Review</h3>
+                    <p class="text-black text-xl w-4/5">Review your answers before hitting submit. Remember, submissions should be honest and must abide by our Story</p>
+                </div>
+            </div>
+         </div>
+
+         <div class="relative bg-green flex flex-col w-full bg-cover">
+            <div class="container mx-auto flex-row flex-wrap flex py-32 items-center">
+                <div class="w-1/2">
+                    <img src="/images/sitting.jpg" />
+                </div>
+                <div class="w-1/2 pl-24">
+                    <h1 class="font-title text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Let's hear your inside voice</h1>
+                    <p class="text-white text-xl mb-12 w-full md:w-3/4">Historically, organisations that have been commercially successful have never needed to create a mechanism for feedback from diverse employees.</p>
+                    <a class="rounded-md inline-flex bg-light-green px-5 py-5 text-dark-grey font-bold text-lg">Share Your Story</a>
+                </div>
+    
+            </div>
+         </div>
+        <x-footer></x-footer>
+        
+    </body>
+</html>

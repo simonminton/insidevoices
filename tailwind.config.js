@@ -12,6 +12,7 @@ module.exports = {
         colors: {
             "white": "#fff",
             "black": "#000",
+            "off-black": "#121212",
             "light-green": "#73D1B9",
             green: "#13535A",
             "accent-green": "#13545A",
@@ -20,17 +21,18 @@ module.exports = {
             yellow: "#F6EAD4",
             "dark-grey": "#0C2F33",
             "off-black": "#333333",
-            "ultra-light-grey": "#F3F3F3",
+            "ultra-light-grey": "#f3f6f6",
+            "light-grey": "#F3F3F3",
             "off-white": "#F8F8F8",
             "off-black": "#333333",
         },
         extend: {
             fontFamily: {
-                sans: ["Rubik", ...defaultTheme.fontFamily.sans],
-                title: ["Futura", ...defaultTheme.fontFamily.sans]
+                sans: ["rubik", ...defaultTheme.fontFamily.sans],
+                title: ["futura-pt", ...defaultTheme.fontFamily.sans]
             },
-            width: {
-                'screen-2xl' : '1440px'
+            screens: {
+                '2xl' : '1440px'
             }
         }
     },

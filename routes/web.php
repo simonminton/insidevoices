@@ -18,6 +18,28 @@ use App\Http\Controllers\RespondentController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/how-it-works', function () {
+    return view('how-it-works');
+});
+Route::get('/about-us', function () {
+    return view('about-us');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});
+Route::get('/our-mission', function () {
+    return view('our-mission');
+});
+Route::get('/story-guidelines', function () {
+    return view('faq');
+});
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
+Route::get('/terms-of-use', function () {
+    return view('terms-of-use');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
