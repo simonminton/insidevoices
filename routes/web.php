@@ -25,7 +25,7 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/faq', function () {
+Route::get('/faqs', function () {
     return view('faq');
 });
 Route::get('/our-mission', function () {

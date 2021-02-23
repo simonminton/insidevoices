@@ -1,1 +1,1 @@
-<a class="rounded-md inline-flex bg-light-green px-5 py-4 text-dark-grey font-bold text-xl">Share Your Story</a>
+<a class="rounded-md inline-flex bg-light-green px-5 py-4 text-dark-grey font-bold text-lg md:text-xl">Share Your Story</a>

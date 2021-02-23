@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.special-underline {
+    @apply relative;
+}
+.special-underline::before {
+    @apply bg-pink absolute w-full;
+    height: 5px;
+    bottom: 10px;
+    content: " ";
+}

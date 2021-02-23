@@ -21,9 +21,9 @@
          <div class="relative bg-black flex flex-col w-full h-screen bg-cover bg-right" style="background-image: url('/images/how-it-works-bg.jpg')">
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black"></div>
              <x-navigation></x-navigation>
-            <div class="container relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
-                <div class="w-1/2">
-                    <h1 class="font-title text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share Your Story</h1>
+            <div class="container px-8 lg:px-0 relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
+                <div class="w-full lg:w-1/2">
+                    <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share Your Story</h1>
                     <p class="text-white text-xl w-full md:w-2/3 mb-12">Whether your employer is good, bad or middle-of-the-road, we want to hear about it. Review your organization so we can see how they measure up against others. It’s time to amplify your voice.</p>
                     <x-share-button-large></x-share-button-large>
                 </div>
@@ -31,24 +31,24 @@
          </div>
 
          <div class="relative bg-white flex flex-col w-full bg-cover">
-            <div class="container mx-auto flex-row flex-wrap flex py-32">
+            <div class="px-8 lg:px-0 container mx-auto flex-row flex-wrap flex py-20 lg:py-32">
                 <div class="w-full">
-                    <h1 class="font-title text-6xl mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>
+                    <h1 class="font-title text-5xl lg:text-6xl mb-10 lg:mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>
                 </div>
-                <div class="w-1/3">
-                    <div class="w-24 h-24 bg-green mb-12"></div>
-                    <h3 class="font-title font-bold mb-8 text-3xl">Read</h3>
-                    <p class="text-black text-xl w-4/5">Take a look at other people's stories by browsing our Organisations page. You can upvote stories that you find</p>
+                <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+                    <div class="mb-4 lg:mb-8"><img src="/images/read.svg"></div>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Read</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Take a look at other people's stories by browsing our Organisations page. You can upvote stories that you find</p>
                 </div>
-                 <div class="w-1/3">
-                    <div class="w-24 h-24 bg-green mb-12"></div>
-                    <h3 class="font-title font-bold mb-8 text-3xl">Write</h3>
-                    <p class="text-black text-xl w-4/5">Review your employer by answering 6 multiple-choice questions. We'll provide space for you to tell us what's driving</p>
+                 <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+                    <div class="mb-4 lg:mb-8"><img src="/images/write.svg"></div>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Write</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Review your employer by answering 6 multiple-choice questions. We'll provide space for you to tell us what's driving</p>
                 </div>
-                 <div class="w-1/3">
-                    <div class="w-24 h-24 bg-green mb-12"></div>
-                    <h3 class="font-title font-bold mb-8 text-3xl">Review</h3>
-                    <p class="text-black text-xl w-4/5">Review your answers before hitting submit. Remember, submissions should be honest and must abide by our Story</p>
+                 <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+                    <div class="mb-4 lg:mb-8"><img src="/images/review.svg"></div>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Review</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Review your answers before hitting submit. Remember, submissions should be honest and must abide by our Story</p>
                 </div>
             </div>
          </div>
