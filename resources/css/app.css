@@ -11,3 +11,9 @@
     bottom: 10px;
     content: " ";
 }
+strong {
+    @apply font-semibold;
+}
+.answer p {
+    @apply mb-4;
+}

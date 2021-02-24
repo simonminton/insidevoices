@@ -24273,6 +24273,14 @@ video {
   content: " ";
 }
 
+strong {
+  font-weight: 600;
+}
+
+.answer p {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

@@ -29,26 +29,99 @@
             
 
         <div class="bg-light-grey  relative flex flex-col w-full pt-12">
-            <div class="container mx-auto w-full flex flex-row">
+            <div class="container mx-auto w-full flex flex-row relative">
                 <div class="w-1/5 sticky top-0 pr-4">
                     <a href="" class="bg-light-green font-bold text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Getting Started</a>
-                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Getting Started</a>
-                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Getting Started</a>
+                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">How it works</a>
+                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Should I write a review?</a>
                 </div>
                 <div class="w-4/5 pl-8 pb-12">
                     <x-qa-section>
                         <x-slot name="title">Getting Started</x-slot>
                         <x-slot name="body">
                             <x-qa>
-                                <x-slot name="question">How do I write a good story?</x-slot>
+                                <x-slot name="question">How do I write a good review?</x-slot>
                                 <x-slot name="answer">
-                                    <p>No people of colour in Leadership - all white however since the Black Lives Matter movement has exploded the business has appointed a member of the BLM committee to represent at all Leadership meetings, which is great progress. However I’m unsure whether someone of that level and who will actually be able to command that level of respect to be listened to will actually be hired in the future. I do hope so.</p>
+                                    <p>After each multiple-choice choice question (MCQ), we’ll ask you what’s driving your answers. This is your opportunity to share your stories and give people the information they need to understand the culture of your organization. In our experience, the best stories:</p>
+<p>- <strong>Explain why you chose that specific answer to the MCQ, out of the 5 options.</strong> For example, if you chose ‘agree’, explain why you didn’t choose ‘disagree’ but also why you didn’t feel strongly enough to choose ‘strongly agree’.</p>
+<p>- <strong>Explain what the answer to the MCQ means.</strong> For example, if your company is not racially diverse, what does that mean? Are there no people of color at all? Are there a few people of one race but no Black people? Paint the picture.</p>
+<p>- <strong>Use examples to provide context.</strong> If certain experiences are playing heavily into the answer you gave, tell us about them. Remember not to use any names or identify anyone.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
-                                <x-slot name="question">How do I write a good story?</x-slot>
+                                <x-slot name="question">Can I ask for my review to be taken down?</x-slot>
                                 <x-slot name="answer">
-                                    <p>No people of colour in Leadership - all white however since the Black Lives Matter movement has exploded the business has appointed a member of the BLM committee to represent at all Leadership meetings, which is great progress. However I’m unsure whether someone of that level and who will actually be able to command that level of respect to be listened to will actually be hired in the future. I do hope so.</p>
+                                    <p>If you included your email address with your review, <strong>you can request to have your review deleted</strong>. Just send an email from that email address to <a href="mailto:support@insidevoices.io">support@insidevoices.io</a> with the reviewed company’s name in the Subject line, and ask us to take it down.</p>
+                                </x-slot>
+                            </x-qa>
+                        </x-slot>
+                    </x-qa-section>
+                    <x-qa-section>
+                        <x-slot name="title">How it works</x-slot>
+                        <x-slot name="body">
+                            <x-qa>
+                                <x-slot name="question">Is my review anonymous?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>Yes,</strong> all reviews are anonymous.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">What if I don’t know the answer?</x-slot>
+                                <x-slot name="answer">
+                                    <p>If you don’t feel like you have the relevant experience to answer a question, <strong>press skip and move on to the next question.</strong></p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">Can I include people’s names in my review?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>No</strong>, do not submit reviews which include names or identify individuals other than members of the Executive Committee (or equivalent body). For more information on what you can and can’t do, see our Terms of Use.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">How long do reviews stay up on the site?</x-slot>
+                                <x-slot name="answer">
+                                    <p>Reviews will sunset after <strong>6 months</strong>. We believe that companies should be judged on what they’re doing now, rather than what they were doing a while ago. We think 6 months is a reasonable amount of time for companies to get their acts together.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">Do you edit reviews? </x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>No</strong>, we never edit, alter or amend the text of reviews or comments.</p>
+                                </x-slot>
+                            </x-qa>
+                        </x-slot>
+                    </x-qa-section>
+                    <x-qa-section>
+                        <x-slot name="title">Should I write a review?</x-slot>
+                        <x-slot name="body">
+                            <x-qa>
+                                <x-slot name="question">I’m not a person of color, should I write a review?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>Yes</strong>, please. If you’ve been paying attention to the way your company performs on diversity, equity and inclusion, we want to hear from you. White people are often in a position to witness behavior that people of color are not, so we encourage you to share what you know, as an act of allyship.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">I don’t see my employer in the list of companies. Should I write a review?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>Yes</strong>, please. If your company isn’t in the list, then it doesn’t have any reviews yet. Writing a review for your company will add it to our list.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">My company already has reviews. Should I write one?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>Yes</strong>, please. The more reviews the better. It can be difficult to tell whether a review is representative of the culture of a company or just one person’s experience. Multiple reviews help to paint a broader picture of the company’s culture and allow users to identify trends and common themes.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">There are barely any people of color at my company. Should I write a review?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>Yes</strong>, and highlight the lack of diversity in your review. It may be clear to you that your company has very few people of color, but that may not be obvious from the outside. Your review could shine a light on the lack of diversity. When writing your review, feel free to skip questions that you don’t think apply.</p>
+                                </x-slot>
+                            </x-qa>
+                            <x-qa>
+                                <x-slot name="question">I’ve just joined my company. Should I write a review?</x-slot>
+                                <x-slot name="answer">
+                                    <p><strong>No</strong>, not yet. We ask that you wait to write a review until you’ve been at a company for at least 6 months. However, feel free to write a review for your previous employer, if you worked there within the last 6 months.</p>
                                 </x-slot>
                             </x-qa>
                         </x-slot>
