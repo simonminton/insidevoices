@@ -24,9 +24,9 @@
                 </x-slot>
                 <x-slot name="body">
                     <h2 class="font-title text-3xl md:text-3xl mb-12 text-white font-semibold leading-tight tracking-wide">Our Mission</h2>
-                    <p class="text-white text-lg md:text-xl w-full xl:w-3/4 mb-12">Historically, companies have managed to be commercially successful without truly committing to diversity. It’s never been a priority because it hasn’t affected their bottom line.</p>
-                    <p class="text-white text-lg md:text-xl w-full xl:w-3/4 mb-12">At inside voices, our mission is to <span class="underline">change the incentive structure</span>, so that companies need to embrace diversity, equity and inclusion (DEI) in order to be successful.</p>
-                    <p class="text-white text-lg md:text-xl w-full xl:w-3/4 mb-12">By providing transparency, we can celebrate the champions, and force companies with toxic cultures to reform.</p>
+                    <p class="text-white text-lg md:text-xl w-full xl:w-5/6 mb-12">Historically, companies have managed to be commercially successful without truly committing to diversity. It’s never been a priority because it hasn’t affected their bottom line.</p>
+                    <p class="text-white text-lg md:text-xl w-full xl:w-5/6 mb-12">At inside voices, our mission is to <span class="underline">change the incentive structure</span>, so that companies need to embrace diversity, equity and inclusion (DEI) in order to be successful.</p>
+                    <p class="text-white text-lg md:text-xl w-full xl:w-5/6 mb-12">By providing transparency, we can celebrate the champions, and force companies with toxic cultures to reform.</p>
                     
                 </x-slot>
                 <x-slot name="image">
