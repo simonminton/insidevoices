@@ -18,9 +18,9 @@
     content: " ";
 }
 
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 strong {
     @apply font-semibold;
