@@ -2,7 +2,7 @@
     <div class="w-full container mx-auto flex-row flex-wrap flex pt-4">
         <div class="w-full md:w-2/3">
             <h4 class="font-title text-2xl md:text-4xl mb-12 text-white font-medium leading-tight tracking-wide">Amplifiying your voice.</h4>
-                <p class="text-white text-base md:text-xl">Have more to say? Contact Us<br>
+                <p class="text-white text-base md:text-xl">Have more to say? Contact us:<br>
                 <a href="mailto:support@insidevoices.io" class="text-light-green ">support@insidevoices.io</a>
                 </p>
 
@@ -16,7 +16,7 @@
                 <li class="w-full mb-6 md:w-1/2"><a href="/faqs">FAQs</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/about-us">About Us</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/share-your-story">Share Your Story</a></li>
-                <li class="w-full mb-6 md:w-1/2"><a href="/story-guidelines">Story Guidelines</a></li>
+                
             </ul>
             <div class="w-full mt-8 mb-12">
                 <p class="text-white text-base md:text-xl">Join our community.</p>
