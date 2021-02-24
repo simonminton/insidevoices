@@ -23,7 +23,7 @@
                     Diversity <span class="special-underline">matters</span>
                 </x-slot>
                 <x-slot name="body">
-                    <p class="text-white text-lg md:text-xl w-full xl:w-3/4 mb-12">Hold your employer accountable by anonymously sharing how they <strong>really</strong> perform on diversity, equity and inclusion. Tell the world whether their actions match their words.</p>
+                    <p class="text-white text-lg md:text-xl w-full xl:w-3/4 mb-12">Hold your employer accountable by anonymously sharing how they <strong>really</strong> perform on diversity, equity and inclusion.</p>
                     <div class="w-full xl:w-5/6 flex flex-row">
                         <input placeholder="Search for a company" class="bg-white px-3 md:px-4 rounded-l-md h-12 md:h-16 text-base md:text-lg w-3/4 md:w-4/5">
                         <button class="w-1/4 md:w-1/5 rounded-r-md  text-dark-grey font-bold text-base md:text-lg bg-light-green">Search</button>
