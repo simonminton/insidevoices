@@ -46,7 +46,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/companies', [CompanyController::class, 'index'])->name('companies.public');
-Route::get('/companies/{company_id}', [CompanyController::class, 'show'])->name('companies.show.public');
+Route::get('/companies/{company}', [CompanyController::class, 'show'])->name('companies.show.public');
 
-Route::get('/your-experience', [RespondentController::class, 'create'])->name('experience.public');
-Route::post('/your-experience', [RespondentController::class, 'store'])->name('experience.submit');
+Route::get('/your-story', [RespondentController::class, 'create'])->name('experience.public');
+Route::post('/your-story', [RespondentController::class, 'store'])->name('experience.submit');

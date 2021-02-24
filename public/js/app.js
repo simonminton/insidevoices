@@ -3113,23 +3113,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -3504,16 +3487,131 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     PublicAppLayout: _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   props: {
+    industries: Array,
     companies: Array
   },
   data: function data() {
+    return {
+      filterIndustry: null
+    };
+  },
+  methods: {
+    doFilterIndustry: function doFilterIndustry(id) {
+      if (this.filterIndustry == id) {
+        this.filterIndustry = null;
+      } else {
+        this.filterIndustry = id;
+        return;
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Company.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Company.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/PublicAppLayout */ "./resources/js/Layouts/PublicAppLayout.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    PublicAppLayout: _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  props: {
+    company: Object
+  },
+  data: function data() {
     return {};
+  },
+  methods: {
+    doFilterIndustry: function doFilterIndustry(id) {
+      if (this.filterIndustry == id) {
+        this.filterIndustry = null;
+      } else {
+        this.filterIndustry = id;
+        return;
+      }
+    }
   }
 });
 
@@ -25600,55 +25698,8 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "min-h-screen bg-gray-100" },
+    { staticClass: "min-h-screen bg-white" },
     [
-      _c("header", { staticClass: "bg-white shadow" }, [
-        _c(
-          "div",
-          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
-          [
-            _c("div", { staticClass: "flex" }, [
-              _c("div", { staticClass: "w-1/4" }, [
-                _vm._v("\n                    Inside Voices\n                ")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "w-3/4 flex justify-end" },
-                [
-                  _c(
-                    "inertia-link",
-                    {
-                      staticClass: "px-4",
-                      attrs: { href: _vm.route("companies.public") }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Companies\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "inertia-link",
-                    {
-                      staticClass: "px-4",
-                      attrs: { href: _vm.route("experience.public") }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Your Experience\n                    "
-                      )
-                    ]
-                  )
-                ],
-                1
-              )
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
@@ -26369,40 +26420,361 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("public-app-layout", [
-    _c("div", { staticClass: "py-12" }, [
-      _c("div", { staticClass: "container w-full  mx-auto sm:px-6 lg:px-8" }, [
-        _c(
-          "h2",
-          { staticClass: "font-semibold text-6xl text-gray-800 leading-tight" },
-          [_vm._v("\n                Companies\n            ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "w-full flex mt-4 flex-row flex-wrap -m-2" },
-          _vm._l(_vm.companies, function(company) {
-            return _c(
-              "div",
-              {
-                staticClass:
-                  "m-2 p-2 h-32 flex justify-center items-center w-full md:w-1/4 bg-white rounded-md shadow-xs"
-              },
-              [
+    _c("div", { staticClass: "bg-green" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0"
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-full h-full items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12 pb-4 md:pb-12 xl:pb-32"
+            },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
+                },
+                [_vm._v("Workplace culture matters")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "leading-loose" }, [
+                _c("div", { staticClass: "w-full xl:w-1/2 flex flex-row" }, [
+                  _c("input", {
+                    staticClass:
+                      "bg-white px-3 md:px-4 rounded-l-md h-12 md:h-16 text-base md:text-lg w-3/4 md:w-4/5",
+                    attrs: { placeholder: "Search for a company" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "w-1/4 md:w-1/5 rounded-r-md  text-dark-grey font-bold text-base md:text-lg bg-light-green"
+                    },
+                    [_vm._v("Search")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "bg-light-grey  relative flex flex-col w-full pt-12 min-h-screen"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "container mx-auto w-full flex flex-row relative" },
+            [
+              _c(
+                "div",
+                { staticClass: "w-1/5 sticky top-0 pr-4" },
+                _vm._l(_vm.industries, function(industry) {
+                  return _c("div", [
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer",
+                        class: [
+                          {
+                            "bg-light-green font-bold":
+                              _vm.filterIndustry == industry.id
+                          }
+                        ],
+                        on: {
+                          click: function($event) {
+                            return _vm.doFilterIndustry(industry.id)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(industry.name))]
+                    )
+                  ])
+                }),
+                0
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                _vm._l(_vm.companies, function(company) {
+                  return _c(
+                    "div",
+                    {
+                      staticClass: "w-full lg:w-1/2 xl:w-1/3 px-2 mb-4 flex",
+                      class: [
+                        {
+                          hidden:
+                            _vm.filterIndustry != null &&
+                            _vm.filterIndustry != company.industry.id
+                        }
+                      ]
+                    },
+                    [
+                      _c(
+                        "inertia-link",
+                        {
+                          staticClass:
+                            "bg-white p-6 w-full flex flex-row flex-wrap shadow-md rounded-md",
+                          attrs: { href: "/companies/" + company.id }
+                        },
+                        [
+                          _c("div", { staticClass: "w-1/3 pb-16" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "flex w-20 h-20 justify-center items-center text-white bg-black"
+                              },
+                              [_vm._v("LOGO")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "w-2/3" }, [
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "text-3xl pl-4 font-bold font-title"
+                              },
+                              [_vm._v(_vm._s(company.name))]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "flex-1 text-lg" }, [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(company.description) +
+                                "\n                                "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "text-light-green text-3xl leading-none"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                    →\n                                "
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("public-app-layout", [
+    _c("div", { staticClass: "bg-green" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0"
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-full h-full flex flex-row flex-wrap items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12 pb-4 md:pb-12 xl:pb-32"
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "w-32 h-32 bg-black justify-center items-center text-white"
+                },
+                [_vm._v("LOGO")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "pl-8" }, [
                 _c(
-                  "inertia-link",
+                  "h1",
                   {
-                    staticClass: "px-4 text-xl",
-                    attrs: { href: "/companies/" + company.id }
+                    staticClass:
+                      "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
                   },
-                  [_vm._v(_vm._s(company.name))]
+                  [_vm._v(_vm._s(_vm.company.name))]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "leading-loose text-xl text-white" }, [
+                  _vm._v(
+                    "\n                       " +
+                      _vm._s(_vm.company.industry.name) +
+                      "\n                    "
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "bg-light-grey  relative flex flex-col w-full pt-12 min-h-screen"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "container mx-auto w-full flex flex-row relative" },
+            [
+              _c("div", { staticClass: "w-1/5 sticky top-0 pr-4" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Representation")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Diversity")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Inclusion")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Fairness")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Advocacy")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer"
+                  },
+                  [_vm._v("Treatment")]
                 )
-              ],
-              1
-            )
-          }),
-          0
-        )
-      ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                    },
+                    [
+                      _c(
+                        "h4",
+                        {
+                          staticClass:
+                            "w-full text-black font-bold text-4xl font-title"
+                        },
+                        [
+                          _vm._v(
+                            "Are people of color well represented in your organization's leadership?"
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "h5",
+                        {
+                          staticClass:
+                            "w-full text-black font-semibold text-3xl font-title"
+                        },
+                        [_vm._v("Most common answer")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "h5",
+                        {
+                          staticClass:
+                            "w-full text-black font-semibold text-2xl font-title"
+                        },
+                        [_vm._v("No, I don't think so")]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
     ])
   ])
 }
@@ -42403,6 +42775,8 @@ var map = {
 	"./API/Index.vue": "./resources/js/Pages/API/Index.vue",
 	"./Companies": "./resources/js/Pages/Companies.vue",
 	"./Companies.vue": "./resources/js/Pages/Companies.vue",
+	"./Company": "./resources/js/Pages/Company.vue",
+	"./Company.vue": "./resources/js/Pages/Company.vue",
 	"./Dashboard": "./resources/js/Pages/Dashboard.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./Form": "./resources/js/Pages/Form.vue",
@@ -42645,6 +43019,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Companies_vue_vue_type_template_id_414f9d02___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Companies_vue_vue_type_template_id_414f9d02___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Company.vue":
+/*!****************************************!*\
+  !*** ./resources/js/Pages/Company.vue ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Company.vue?vue&type=template&id=6da5e338& */ "./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338&");
+/* harmony import */ var _Company_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Company.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Company.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Company_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Company.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Company.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./resources/js/Pages/Company.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Company_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Company.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Company.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Company_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338& ***!
+  \***********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Company.vue?vue&type=template&id=6da5e338& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Company.vue?vue&type=template&id=6da5e338&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Company_vue_vue_type_template_id_6da5e338___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

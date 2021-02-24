@@ -1,24 +1,7 @@
 <template>
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-white">
 
-        <!-- Page Heading -->
-        <header class="bg-white shadow">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <div class="flex">
-                    <div class="w-1/4">
-                        Inside Voices
-                    </div>
-                    <div class="w-3/4 flex justify-end">
-                        <inertia-link class="px-4" :href="route('companies.public')">
-                            Companies
-                        </inertia-link>
-                        <inertia-link class="px-4" :href="route('experience.public')">
-                            Your Experience
-                        </inertia-link>
-                    </div>
-                </div>
-            </div>
-        </header>
+        
 
         <!-- Page Content -->
         <main>

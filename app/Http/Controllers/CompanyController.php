@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Company;
+use App\Models\Industry;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -15,10 +16,12 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $companies = Company::orderBy('name')->get();
+        $companies = Company::orderBy('name')->with('industry')->get();
+        $industries = Industry::orderBy('name')->get();
         return Inertia::render('Companies',
             [
                 'companies' => $companies,
+                'industries' => $industries,
             ]);
     }
 
@@ -52,6 +55,8 @@ class CompanyController extends Controller
      */
     public function show(Company $company)
     {
+       $company = Company::where('id',$company->id)->with('industry')->first();
+        
         return Inertia::render('Company',
             [
                 'company' => $company,

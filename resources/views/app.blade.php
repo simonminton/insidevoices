@@ -8,7 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://use.typekit.net/wsk2kkl.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -18,7 +18,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+   <body class="antialiased font-sans font-light">
+        <!-- Home page main section -->
+        <div class="bg-green relative flex flex-col w-full">
+            <x-navigation></x-navigation>
+        </div>
         @inertia
     </body>
 </html>
