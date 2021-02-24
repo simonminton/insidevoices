@@ -1,5 +1,5 @@
 <div class="container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0">
-    <div class="w-full md:w-1/3 lg:w-1/2 h-full items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12">
+    <div class="w-full md:w-1/3 lg:w-1/2 h-full items-center pt-4 md:pt-12 xl:pt-24 2xl:pt-32 xl:pr-12">
         <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">{{ $title }}</h4>
         <div class="leading-loose">{{ $body }}</div>
             
