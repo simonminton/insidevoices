@@ -24284,6 +24284,10 @@ video {
   content: " ";
 }
 
+* {
+  outline: 1px solid red;
+}
+
 strong {
   font-weight: 600;
 }
