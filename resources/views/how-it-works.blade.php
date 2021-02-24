@@ -23,8 +23,8 @@
              <x-navigation></x-navigation>
             <div class="container px-8 lg:px-0 relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
                 <div class="w-full lg:w-1/2">
-                    <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share Your Story</h1>
-                    <p class="text-white text-xl w-full md:w-2/3 mb-12">Whether your employer is good, bad or middle-of-the-road, we want to hear about it. Review your organization so we can see how they measure up against others. It’s time to amplify your voice.</p>
+                    <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share your story</h1>
+                    <p class="text-white text-xl w-full md:w-2/3 mb-12">We want to know how your company performs when it comes to diversity, equity and inclusion. Whether you’re a person of color or an ally, anonymously review your employer so we can see how they measure up against others.</p>
                     <x-share-button-large></x-share-button-large>
                 </div>
             </div>
@@ -37,18 +37,18 @@
                 </div>
                 <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8"><img src="/images/read.svg"></div>
-                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Read</h3>
-                    <p class="text-black text-xl w-full lg:w-4/5">Take a look at other people's stories by browsing our Organisations page. You can upvote stories that you find</p>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Read some reviews</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Browse our reviews for companies that interest you. You can upvote reviews that you find helpful.</p>
                 </div>
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8"><img src="/images/write.svg"></div>
-                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Write</h3>
-                    <p class="text-black text-xl w-full lg:w-4/5">Review your employer by answering 6 multiple-choice questions. We'll provide space for you to tell us what's driving</p>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Share your story</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Review your company by answering 6 multiple-choice questions. After each one, add detail to tell us what’s driving your answers.</p>
                 </div>
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8"><img src="/images/review.svg"></div>
-                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Review</h3>
-                    <p class="text-black text-xl w-full lg:w-4/5">Review your answers before hitting submit. Remember, submissions should be honest and must abide by our Story</p>
+                    <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Spread the word</h3>
+                    <p class="text-black text-xl w-full lg:w-4/5">Ask your friends to write a review. This is anti-racism in action, but it takes all of us.</p>
                 </div>
             </div>
          </div>
@@ -57,10 +57,10 @@
                 <img class="w-full md:-mb-16 z-10 top-0" src="/images/sitting.jpg" />
             </x-slot>
             <x-slot name="title">
-                Let's hear your inside voice
+                Amplify your voice
             </x-slot>
             <x-slot name="body">
-                <p class="mb-12">Historically, organisations that have been commercially successful have never needed to create a mechanism for feedback from diverse employees.</p>
+                <p class="mb-12">Lack of representation? A racial pay gap? A glass ceiling? We haven’t heard it all until we’ve heard from you.</p>
             </x-slot>
         </x-lr--layout>
         
