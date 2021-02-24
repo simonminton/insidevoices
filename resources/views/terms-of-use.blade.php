@@ -16,16 +16,15 @@
     </head>
     <body class="antialiased font-sans font-light">
         <!-- Home page main section -->
-        <div class="relative bg-green flex flex-col w-full" >
-            
-             <x-navigation></x-navigation>
-            <div class="container relative mx-auto flex-row flex-wrap flex py-12 h-full items-center ">
-                <div class="w-full">
-                    <h1 class="font-title text-6xl mb-2 text-white font-semibold leading-tight tracking-wide">Terms & Conditions</h1>
-                    <p class="text-white text-xl w-full md:w-2/3 mb-12">Updated: February 10, 2021</p>
-                </div>
-            </div>
-         </div>
+        <div class="bg-green relative flex flex-col w-full">
+            <x-navigation></x-navigation>
+            <x-plain-header>
+                <x-slot name="title">Terms & Conditions</x-slot>
+                <x-slot name="body">
+                    <p class="text-white text-lg md:text-xl">Updated: February 24, 2020<p>
+                </x-slot>
+            </x-plain-header>
+        </div>
          <div class="relative bg-white flex flex-col w-full" >
             <div class="container relative mx-auto flex-row flex-wrap flex h-full items-center ">
                 <div class="w-full py-10">

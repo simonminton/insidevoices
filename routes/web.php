@@ -32,7 +32,7 @@ Route::get('/our-mission', function () {
     return view('our-mission');
 });
 Route::get('/story-guidelines', function () {
-    return view('faq');
+    return view('story-guidelines');
 });
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');

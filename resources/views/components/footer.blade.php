@@ -16,7 +16,6 @@
                 <li class="w-full mb-6 md:w-1/2"><a href="/faqs">FAQs</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/about-us">About Us</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/share-your-story">Share Your Story</a></li>
-                <li class="w-full mb-6 md:w-1/2"><a href="/our-mission">Our Mission</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/story-guidelines">Story Guidelines</a></li>
             </ul>
             <div class="w-full mt-8 mb-12">

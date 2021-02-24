@@ -52,20 +52,18 @@
                 </div>
             </div>
          </div>
-
-         <div class="relative bg-green flex flex-col w-full bg-cover">
-            <div class="container mx-auto flex-row flex-wrap flex py-32 items-center">
-                <div class="w-1/2">
-                    <img src="/images/sitting.jpg" />
-                </div>
-                <div class="w-1/2 pl-24">
-                    <h1 class="font-title text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Let's hear your inside voice</h1>
-                    <p class="text-white text-xl mb-12 w-full md:w-3/4">Historically, organisations that have been commercially successful have never needed to create a mechanism for feedback from diverse employees.</p>
-                    <a class="rounded-md inline-flex bg-light-green px-5 py-5 text-dark-grey font-bold text-lg">Share Your Story</a>
-                </div>
-    
-            </div>
-         </div>
+         <x-lr--layout>
+            <x-slot name="image">
+                <img class="w-full md:-mb-16 z-10 top-0" src="/images/sitting.jpg" />
+            </x-slot>
+            <x-slot name="title">
+                Let's hear your inside voice
+            </x-slot>
+            <x-slot name="body">
+                <p class="mb-12">Historically, organisations that have been commercially successful have never needed to create a mechanism for feedback from diverse employees.</p>
+            </x-slot>
+        </x-lr--layout>
+        
         <x-footer></x-footer>
         
     </body>
