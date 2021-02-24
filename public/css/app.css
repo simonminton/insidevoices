@@ -24258,7 +24258,7 @@ video {
           animation: bounce 1s infinite;
 }
 
-.special-underline {
+.special-underline, .pinkUnderline {
   position: relative;
 }
 
@@ -24269,7 +24269,18 @@ video {
   position: absolute;
   width: 100%;
   height: 5px;
-  bottom: 10px;
+  bottom: 3px;
+  content: " ";
+}
+
+.pinkUnderline::before {
+  --bg-opacity: 1;
+  background-color: #FFB7C1;
+  background-color: rgba(255, 183, 193, var(--bg-opacity));
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
   content: " ";
 }
 

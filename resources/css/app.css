@@ -2,15 +2,23 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.special-underline {
+.special-underline, .pinkUnderline {
     @apply relative;
 }
 .special-underline::before {
     @apply bg-pink absolute w-full;
     height: 5px;
-    bottom: 10px;
+    bottom: 3px;
     content: " ";
 }
+.pinkUnderline::before {
+    @apply bg-pink absolute w-full;
+    height: 3px;
+    bottom: -2px;
+    content: " ";
+}
+
+
 strong {
     @apply font-semibold;
 }

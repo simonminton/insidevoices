@@ -40,7 +40,7 @@
                 <div class="w-full md:w-1/2 h-full items-center pt-24 md:pt-12  md:pl-24 px-8 md:px-0">
                     <h1 class="font-title text-5xl md:text-6xl mb-12 text-black font-semibold leading-tight tracking-wide">What's really happening?</h4>
                     <p class="text-off-black  text-lg md:text-xl mb-12 w-full">Many companies say they celebrate diversity, but they don’t always practice what they preach.</p>
-                    <p class="text-off-black  text-lg md:text-xl mb-12 w-full">Since George Floyd’s murder, lots of companies have ben claiming to be <span class="underline">anti-racist</span>. But only their employees know what the culture is really like.</p>
+                    <p class="text-off-black  text-lg md:text-xl mb-12 w-full">Since George Floyd’s murder, lots of companies have ben claiming to be <span class="pinkUnderline">anti-racist</span>. But only their employees know what the culture is really like.</p>
                     <p class="text-off-black  text-lg md:text-xl mb-12 w-full">Building an inclusive environment takes work. Some companies are working harder than others. At inside voices we ask employees what’s really happening.</p>
                     <div class="w-full md:-mb-16 md:pl-20 z-50 relative top-0 justify-center flex flex-wrap">
                         <img class="text-center -mb-20 relative z-50" src="/images/white-logo-overlay.svg" />
