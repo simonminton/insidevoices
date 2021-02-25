@@ -30,7 +30,7 @@
             </div>
          </div>
 
-         <div class="relative bg-white flex flex-col w-full bg-cover">
+         <div class="relative bg-white flex flex-col w-full bg-cover" id="how-it-works">
             <div class="px-8 lg:px-0 container mx-auto flex-row flex-wrap flex py-20 lg:py-32">
                 <div class="w-full">
                     <h1 class="font-title text-5xl lg:text-6xl mb-10 lg:mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>

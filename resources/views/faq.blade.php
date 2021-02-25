@@ -29,15 +29,15 @@
             
 
         <div class="bg-light-grey  relative flex flex-col w-full pt-12">
-            <div class="container mx-auto w-full flex flex-row relative">
-                <div class="w-1/5 sticky top-0 pr-4">
-                    <a href="" class="bg-light-green font-bold text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Getting Started</a>
-                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">How it works</a>
-                    <a href="" class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6">Should I write a review?</a>
+            <div class="container mx-auto w-full flex flex-row flex-wrap relative">
+                <div class="w-full lg:w-1/5 sticky top-0 px-8 lg:px-0 lg:pr-4 flex flex-col overflow-scroll ">
+                    <a href="" class="bg-light-green  font-bold text-dark-grey inline-block lg:w-full text-lg lg:flex rounded-md mb-4 py-3 px-6">Writing a review</a>
+                    <a href="" class="bg-white  text-dark-grey inline-block lg:w-full text-lg lg:flex rounded-md mb-4 py-3 px-6">How it works</a>
+                    <a href="" class="bg-white  text-dark-grey inline-block lg:w-full text-lg lg:flex rounded-md mb-4 py-3 px-6">Who should write a review?</a>
                 </div>
-                <div class="w-4/5 pl-8 pb-12">
+                <div class="w-full lg:w-4/5 px-8 lg:pl-8 lg:px-0 pb-12">
                     <x-qa-section>
-                        <x-slot name="title">Getting Started</x-slot>
+                        <x-slot name="title">Writing a review</x-slot>
                         <x-slot name="body">
                             <x-qa>
                                 <x-slot name="question">How do I write a good review?</x-slot>
@@ -92,7 +92,7 @@
                         </x-slot>
                     </x-qa-section>
                     <x-qa-section>
-                        <x-slot name="title">Should I write a review?</x-slot>
+                        <x-slot name="title">Who should write a review?</x-slot>
                         <x-slot name="body">
                             <x-qa>
                                 <x-slot name="question">I’m not a person of color, should I write a review?</x-slot>

@@ -1,7 +1,7 @@
 <div class="bg-white relative flex flex-col w-full px-8 md:px-0">
             <div class="container mx-auto flex-row flex-wrap flex pt-4 pb-12 md:pb-32">
                 <div class="w-full h-full items-center md:pt-32 pt-8">
-                    <h1 class="font-title text-center md:text-left text-5xl md:text-6xl mb-8 text-black font-semibold leading-tight tracking-wide">Latest Stories</h4>
+                    <h1 class="font-title text-center md:text-left text-5xl md:text-6xl mb-8 text-black font-semibold leading-tight tracking-wide">Recent Stories</h4>
                 </div>
                 
                 <x-latest-stories-story>

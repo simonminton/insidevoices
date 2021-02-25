@@ -18,7 +18,7 @@ use App\Http\Controllers\RespondentController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/how-it-works', function () {
+Route::get('/share-your-story', function () {
     return view('how-it-works');
 });
 Route::get('/about-us', function () {

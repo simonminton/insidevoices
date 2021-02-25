@@ -1,7 +1,7 @@
 <footer class="bg-dark-grey relative flex flex-col w-full pb-8 md:pb-32 pt-8 md:pt-28 px-8 md:px-0 ">
     <div class="w-full container mx-auto flex-row flex-wrap flex pt-4">
         <div class="w-full md:w-2/3">
-            <h4 class="font-title text-2xl md:text-4xl mb-12 text-white font-medium leading-tight tracking-wide">Amplifiying your voice.</h4>
+            <h4 class="font-title text-2xl md:text-4xl mb-12 text-white font-medium leading-tight tracking-wide">Amplifiying your voices.</h4>
                 <p class="text-white text-base md:text-xl">Have more to say? Contact us:<br>
                 <a href="mailto:support@insidevoices.io" class="text-light-green ">support@insidevoices.io</a>
                 </p>
@@ -12,7 +12,7 @@
         </div>
         <div class="w-full md:w-1/3 flex flex-row flex-wrap  ">
             <ul class="w-full text-white text-base md:text-xl flex flex-row flex-wrap">
-                <li class="w-full mb-6 md:w-1/2"><a href="/how-it-works">How it Works</a></li>
+                <li class="w-full mb-6 md:w-1/2"><a href="/share-your-story#how-it-works">How it Works</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/faqs">FAQs</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/about-us">About Us</a></li>
                 <li class="w-full mb-6 md:w-1/2"><a href="/share-your-story">Share Your Story</a></li>
@@ -31,8 +31,10 @@
             <div class="w-full md:w-1/2">
                 <p class="text-center md:text-left">&copy; inside voices {{ date('Y') }}. All rights reserved.</p>
             </div>
-            <div class="w-full md:w-1/2 md:text-right">
+            <div class="w-full md:w-1/4 md:text-right">
                 <a class="pl-10" href="/privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="w-full md:w-1/4 md:text-right">
                 <a class="pl-10" href="/terms-of-use">Terms of Use</a>
             </div>
         </div>
