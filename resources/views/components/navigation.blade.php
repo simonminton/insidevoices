@@ -4,7 +4,7 @@
             <a href="/"><img src="/images/logo.svg"></a>
         </div>
         <div class="hidden md:flex w-2/3 lg:w-1/2 justify-end items-center">
-            <a class="text-base xl:text-lg text-ultra-light-grey px-2 xl:px-4" href="/companies">Companies</a>
+            <a class="text-base xl:text-lg text-ultra-light-grey px-2 xl:px-4" href="/companies">Company Reviews</a>
             <a class="text-base xl:text-lg text-ultra-light-grey px-2 xl:px-4" href="/how-it-works">How it Works</a>
             <a class="text-base xl:text-lg text-ultra-light-grey px-2 xl:px-4" href="/about-us">About Us</a>
             <a class="ml-8 rounded-md bg-light-green px-1 xl:px-3 py-4 text-dark-grey font-bold text-sm xl:text-base">Share Your Story</a>
