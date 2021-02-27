@@ -2,7 +2,7 @@
     <public-app-layout>
         <div class="py-24 bg-top bg-cover h-screen"  style="background-image: url('/images/ivbga.jpg')">
             <div class="container w-full mx-auto flex flex-row flex-wrap">
-                <div class="lg:w-3/5 sm:px-6 lg:px-8" >
+                <div class="w-full lg:w-3/5 sm:px-6 lg:px-8" >
                     <form @submit.prevent="submit"  enctype="multipart/form-data">
                         <div class="lg:pr-12">
                             
@@ -55,7 +55,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="w-2/5 pt-8">
+                <div class="hidden lg:flex w-2/5 pt-8">
                 <img src="/images/sittingtwo.png" />
                 </div>
             </div>
