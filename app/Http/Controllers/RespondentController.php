@@ -29,11 +29,11 @@ class RespondentController extends Controller
     public function create()
     {
         $companies = Company::orderBy('name')->get();
-        $questions = Category::where('name','Race')->with(['questions.children.question_type','questions.question_type'])->get();
+        
         return Inertia::render('Form',
             [
                 'companies' => $companies,
-                'questions' => $questions,
+               
             ]);
     }
 

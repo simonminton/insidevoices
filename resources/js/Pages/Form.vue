@@ -1,125 +1,70 @@
 <template>
     <public-app-layout>
-    <div class="py-12">
-            <div class="container w-full  mx-auto sm:px-6 lg:px-8">
-                <h2 class="font-semibold text-6xl text-gray-800 leading-tight">
-                    Tell us about your experience
-                </h2>
-                <p class="text-2xl mt-4 w-2/3">We have designed InsideVoices to be a safe, anonymous space to be honest about your experience of working with your company. We don't collect identifying information, and every question is optional. If you aren't comfortable answering, just click skip.</p>
-            </div>
-            <form @submit.prevent="submit"  enctype="multipart/form-data">
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4" v-show="current_question == 'company'">
-                    <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-4">
-                        <h3 class="text-2xl font-semibold mb-2">The basics.</h3>
-                        <label class=" text-gray-700 rounded-md py-2 text-lg mr-4" for="company_name_select">Your Company</label>
-                        <select class="bg-blue-100 text-gray-700  rounded-md px-3 py-2 text-lg" name="company_name_select" id="company_name_select" v-model="form.company_name">
-                            <option value="0" selected>Pick a company</option>
-                            <option value="not-on-list" >Not on list</option>
-                            <option v-for="company in companies" :value="company.id">{{company.name}}</option>
-                        </select>
-                        <input v-if="form.company_name == 'not-on-list'" class="ml-3 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" name="company_name" placeholder="Enter company name" v-model="form.company_new_name" >
-                    </div>
-                </div>
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4 ">
-                    <div v-for="(question, index) in parentQuestions">
-                        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-row flex-wrap"  v-show="current_question == question.id"">
-
-                            <label class="w-full font-semibold text-gray-700 rounded-md py-2 text-lg mr-4" :for="question.id">
-                                {{ question.question_text }}
-
-                            </label>
-
-                            <input v-if="question.question_type.name == 'text'" class="w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[question.id]">
-
-                            <textarea v-if="question.question_type.name == 'textarea'" class="w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[ question.id ]"></textarea>
-
-                            <select v-if="question.question_type.name == 'select'" class="ml-3 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[ question.id ]">
-                                <option v-for="value in question.options" :value="value">{{ value }}</option>
-                            </select>
+        <div class="py-24 bg-top bg-cover h-screen"  style="background-image: url('/images/ivbga.jpg')">
+            <div class="container w-full mx-auto flex flex-row flex-wrap">
+                <div class="lg:w-3/5 sm:px-6 lg:px-8" >
+                    <form @submit.prevent="submit"  enctype="multipart/form-data">
+                        <div class="lg:pr-12">
                             
-                            <fieldset v-if="question.question_type.name == 'checkboxes'">
-                                <label v-for="value in question.options">
-                                    <input type="checkbox" :name="question.id+'[]'" :value="value" v-model="form.responses[ question.id ]"/>
-                                        {{ value }}
-                                </label>
-                            </fieldset>
+                            <h3 class="pinkUnderline text-white text-xl inline-block mb-8 ">
+                               <span v-if="step == 3 || step == 4">Representation</span>
+                                <span v-if="step == 5 || step == 6">Diversity</span>
+                                <span v-if="step == 7 || step == 8">Inclusion</span>
+                                <span v-if="step == 9 || step == 10">Fairness</span>
+                                <span v-if="step == 11 || step == 12">Advocacy</span>
+                                <span v-if="step == 13 || step == 14">Treatment</span>
+                            </h3>
+                            <h4 class="text-white text-lg" v-if="step > 2 && step < 14 && step%2 != 0">
+                            How do you feel about this statement?
+                            </h4>
+                            
 
-                            <fieldset v-if="question.question_type.name == 'radio'">
-                                <label v-for="value in question.options">
-                                    <input type="radio" :name="question.id" :value="value"  v-model="form.responses[ question.id ]"/>
-                                    {{ value }}
-                                </label>
-                            </fieldset>
+                            <h2 class="text-5xl font-bold font-title leading-none text-white">
+                                <span v-if="step == 1">Well done for taking <span class="pinkUnderline">action!</span></span>
+                                <span v-if="step == 3">People of color are well-represented in my company’s leadership.</span>
+                                <span v-if="step == 5">My company is racially diverse.</span>
+                                <span v-if="step == 7">In my opinion, people of color can be themselves at my company.</span>
+                                <span v-if="step == 9">Race has an impact on performance reviews or compensation at my company.</span>
+                                <span v-if="step == 11">My company’s leadership cares about issues that specifically affect people of color.</span>
+                                <span v-if="step == 13">People of color receive equal treatment at my company.</span>
+                                <span v-if="step >= 4 && step%2 != 1 && step <= 14">What makes you say that?</span>
 
-                            <div class="mt-6 w-full" v-if="question.children.length>0">
-                                <div class="flex flex-row flex-wrap" v-for="question in question.children">
-                                    <label class="w-full text-gray-700 rounded-md py-2 text-lg mr-4" :for="question.id">
-                                        {{ question.question_text }}
-                                    </label>
-                                    <input v-if="question.question_type.name == 'text'" class="w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[ question.id ]">
+                            </h2>
+                            <h4 class="text-white text-xl mt-8" v-if="step == 1">
+                            Thanks for deciding to write an anonymous review. By telling us what you’ve witnessed and experienced, you can help other people figure out if your employer is right for them.
+                            </h4>
+                            <select v-if="step >= 3 && step%2 == 1 && step <= 14" class="text-2xl rounded-lg w-full flex px-4 py-6 mt-10">
+                                <option value="0">Select your Answer</option>
+                                <option value="0">Strongly disagree</option>
+                                <option value="0">Disagree</option>
+                                <option value="0">Neither agree nor disagree</option>
+                                <option value="0">Agree</option>
+                                <option value="0">Strongly agree</option>
+                            </select>
 
-                                    <textarea v-if="question.question_type.name == 'textarea'" class="w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[ question.id ]"></textarea>
-
-                                    <select v-if="question.question_type.name == 'select'" class=" bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg" type="text" :name="question.id" v-model="form.responses[ question.id ]">
-                                        <option v-for="value in question.options" :value="value">{{ value }}</option>
-                                    </select>
-                                    
-                                    <fieldset v-if="question.question_type.name == 'checkboxes'">
-                                        <label v-for="value in question.options">
-                                            <input type="checkbox" :name="question.id+'[]'" :value="value"  v-model="form.responses[ question.id ]"/>
-                                                {{ value }}
-                                        </label>
-                                    </fieldset>
-
-                                    <fieldset v-if="question.question_type.name == 'radio'">
-                                        <label v-for="value in question.options">
-                                            <input type="radio" :name="question.id" :value="value"  v-model="form.responses[ question.id ]"/>
-                                            {{ value }}
-                                        </label>
-                                    </fieldset>
-
+                            <textarea v-if="step >= 4 && step%2 != 1  && step <= 14" class="w-full flex rounded-md p-4 mt-10" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                            <div class="w-full flex flex-row flex-wrap mt-10">
+                                <div class="w-1/2">
                                 </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div v-for="(question, index) in parentQuestions" class="flex flex-row mt-8">
-                        <div v-if="index == 0 && current_question == 'company'" class="w-full flex flex-row">
-                            <div class="flex flex-row justify-end w-full">
-                            <span class="bg-blue-200 py-2 px-3 rounded-md cursor-pointer" @click="setCurrentQuestion(question.id)">Next -></span>
-                        </div>
-                        </div>
-                        <div v-if="index == 0 && current_question == question.id" class="w-1/2">
-                            <div class="flex flex-row">
-                            <span class="bg-blue-200 py-2 px-3 rounded-md cursor-pointer" @click="setCurrentQuestion('company')"><- Previous</span>
-                        </div>
-                        </div>
-                        <div v-if="index>0 && current_question == question.id" class="w-1/2">
-                             <div class="flex flex-row">
-                            <span class="bg-blue-200 py-2 px-3 rounded-md cursor-pointer" @click="setCurrentQuestion(parentQuestions[index-1].id)"><- Previous</span>
-                        </div>
-                        </div>
-                        <div v-if="index < parentQuestionCount-1 && current_question == question.id" class="w-1/2 flex flex-row justify-end">
+                                <div class="w-1/2 flex flex-row justify-end">
+                                    <span @click="step = step+1" class="cursor-pointer px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md">Continue</span>
+                                </div>
 
-                            <div class="w-1/2  flex flex-row">
-                                <span class="py-2 px-3 cursor-pointer" @click="setCurrentQuestion(parentQuestions[index+1].id)">Skip -></span>
-                            </div>
-                            <div class="w-1/2 flex flex-row justify-end">
-                                <span class="bg-blue-200 py-2 px-3 rounded-md cursor-pointer" @click="setCurrentQuestion(parentQuestions[index+1].id)">Next -></span>
+
                             </div>
                         </div>
-                        <div v-if="index == parentQuestionCount-1 && current_question == question.id" class="w-1/2 flex flex-row justify-end">
-                            <button class="bg-teal-500 rounded-md text-white px-3 py-2" type="submit">Submit</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
+                <div class="w-2/5 pt-8">
+                <img src="/images/sittingtwo.png" />
+                </div>
+            </div>
         </div>
     </public-app-layout>
 </template>
 
 <script>
+import Button from '../Jetstream/Button.vue'
     import PublicAppLayout from './../Layouts/PublicAppLayout'
 
     export default {
@@ -128,16 +73,15 @@
         },
         props: {
             companies: Array,
-            questions: Array
         },
           remember: 'form',
         data() {
             return {
                 company_name: "0",
                 current_question: "company",
-                form: {
-                    responses: {}
-                },
+                steps: 0,
+                step: 1
+                
                
             }
         },
@@ -147,16 +91,7 @@
             //     return !q.parent_id;
             //   });
             // },
-            parentQuestions() {
-                return this.questions[0].questions.filter(question => {
-                    if(!question.parent_id) {
-                        return question;
-                    }
-                })
-            },
-            parentQuestionCount: function() {
-                return _.size(this.parentQuestions);
-            }
+           
           },
         
         methods: {

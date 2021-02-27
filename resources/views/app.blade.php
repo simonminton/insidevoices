@@ -24,5 +24,6 @@
             <x-navigation></x-navigation>
         </div>
         @inertia
+        <x-footer></x-footer>
     </body>
 </html>

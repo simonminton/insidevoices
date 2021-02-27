@@ -3666,63 +3666,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/PublicAppLayout */ "./resources/js/Layouts/PublicAppLayout.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _Jetstream_Button_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Jetstream/Button.vue */ "./resources/js/Jetstream/Button.vue");
+/* harmony import */ var _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Layouts/PublicAppLayout */ "./resources/js/Layouts/PublicAppLayout.vue");
 //
 //
 //
@@ -3789,40 +3734,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    PublicAppLayout: _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+    PublicAppLayout: _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   props: {
-    companies: Array,
-    questions: Array
+    companies: Array
   },
   remember: 'form',
   data: function data() {
     return {
       company_name: "0",
       current_question: "company",
-      form: {
-        responses: {}
-      }
+      steps: 0,
+      step: 1
     };
   },
-  computed: {
-    // parentQuestions: function() {
+  computed: {// parentQuestions: function() {
     //   return _.pickBy(this.questions[0].questions, function(q) {
     //     return !q.parent_id;
     //   });
     // },
-    parentQuestions: function parentQuestions() {
-      return this.questions[0].questions.filter(function (question) {
-        if (!question.parent_id) {
-          return question;
-        }
-      });
-    },
-    parentQuestionCount: function parentQuestionCount() {
-      return _.size(this.parentQuestions);
-    }
   },
   methods: {
     submit: function submit() {
@@ -26860,888 +26793,233 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("public-app-layout", [
-    _c("div", { staticClass: "py-12" }, [
-      _c("div", { staticClass: "container w-full  mx-auto sm:px-6 lg:px-8" }, [
+    _c(
+      "div",
+      {
+        staticClass: "py-24 bg-top bg-cover h-screen",
+        staticStyle: { "background-image": "url('/images/ivbga.jpg')" }
+      },
+      [
         _c(
-          "h2",
-          { staticClass: "font-semibold text-6xl text-gray-800 leading-tight" },
+          "div",
+          { staticClass: "container w-full mx-auto flex flex-row flex-wrap" },
           [
-            _vm._v(
-              "\n                Tell us about your experience\n            "
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-2xl mt-4 w-2/3" }, [
-          _vm._v(
-            "We have designed InsideVoices to be a safe, anonymous space to be honest about your experience of working with your company. We don't collect identifying information, and every question is optional. If you aren't comfortable answering, just click skip."
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "form",
-        {
-          attrs: { enctype: "multipart/form-data" },
-          on: {
-            submit: function($event) {
-              $event.preventDefault()
-              return _vm.submit($event)
-            }
-          }
-        },
-        [
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.current_question == "company",
-                  expression: "current_question == 'company'"
-                }
-              ],
-              staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4"
-            },
-            [
+            _c("div", { staticClass: "lg:w-3/5 sm:px-6 lg:px-8" }, [
               _c(
-                "div",
+                "form",
                 {
-                  staticClass:
-                    "bg-white overflow-hidden shadow-xl sm:rounded-lg p-4"
+                  attrs: { enctype: "multipart/form-data" },
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.submit($event)
+                    }
+                  }
                 },
                 [
-                  _c("h3", { staticClass: "text-2xl font-semibold mb-2" }, [
-                    _vm._v("The basics.")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        " text-gray-700 rounded-md py-2 text-lg mr-4",
-                      attrs: { for: "company_name_select" }
-                    },
-                    [_vm._v("Your Company")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.form.company_name,
-                          expression: "form.company_name"
-                        }
-                      ],
-                      staticClass:
-                        "bg-blue-100 text-gray-700  rounded-md px-3 py-2 text-lg",
-                      attrs: {
-                        name: "company_name_select",
-                        id: "company_name_select"
-                      },
-                      on: {
-                        change: function($event) {
-                          var $$selectedVal = Array.prototype.filter
-                            .call($event.target.options, function(o) {
-                              return o.selected
-                            })
-                            .map(function(o) {
-                              var val = "_value" in o ? o._value : o.value
-                              return val
-                            })
-                          _vm.$set(
-                            _vm.form,
-                            "company_name",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
-                        }
-                      }
-                    },
-                    [
-                      _c("option", { attrs: { value: "0", selected: "" } }, [
-                        _vm._v("Pick a company")
-                      ]),
-                      _vm._v(" "),
-                      _c("option", { attrs: { value: "not-on-list" } }, [
-                        _vm._v("Not on list")
-                      ]),
-                      _vm._v(" "),
-                      _vm._l(_vm.companies, function(company) {
-                        return _c(
-                          "option",
-                          { domProps: { value: company.id } },
-                          [_vm._v(_vm._s(company.name))]
-                        )
-                      })
-                    ],
-                    2
-                  ),
-                  _vm._v(" "),
-                  _vm.form.company_name == "not-on-list"
-                    ? _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.form.company_new_name,
-                            expression: "form.company_new_name"
-                          }
-                        ],
+                  _c("div", { staticClass: "lg:pr-12" }, [
+                    _c(
+                      "h3",
+                      {
                         staticClass:
-                          "ml-3 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                        attrs: {
-                          type: "text",
-                          name: "company_name",
-                          placeholder: "Enter company name"
-                        },
-                        domProps: { value: _vm.form.company_new_name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.form,
-                              "company_new_name",
-                              $event.target.value
-                            )
-                          }
-                        }
-                      })
-                    : _vm._e()
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4 " },
-            [
-              _vm._l(_vm.parentQuestions, function(question, index) {
-                return _c("div", [
-                  _c(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: _vm.current_question == question.id,
-                          expression: "current_question == question.id"
-                        }
-                      ],
-                      staticClass:
-                        "bg-white overflow-hidden shadow-xl sm:rounded-lg p-4 flex flex-row flex-wrap"
-                    },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "w-full font-semibold text-gray-700 rounded-md py-2 text-lg mr-4",
-                          attrs: { for: question.id }
-                        },
-                        [
+                          "pinkUnderline text-white text-xl inline-block mb-8 "
+                      },
+                      [
+                        _vm.step == 3 || _vm.step == 4
+                          ? _c("span", [_vm._v("Representation")])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 5 || _vm.step == 6
+                          ? _c("span", [_vm._v("Diversity")])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 7 || _vm.step == 8
+                          ? _c("span", [_vm._v("Inclusion")])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 9 || _vm.step == 10
+                          ? _c("span", [_vm._v("Fairness")])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 11 || _vm.step == 12
+                          ? _c("span", [_vm._v("Advocacy")])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 13 || _vm.step == 14
+                          ? _c("span", [_vm._v("Treatment")])
+                          : _vm._e()
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm.step > 2 && _vm.step < 14 && _vm.step % 2 != 0
+                      ? _c("h4", { staticClass: "text-white text-lg" }, [
                           _vm._v(
-                            "\n                            " +
-                              _vm._s(question.question_text) +
-                              "\n\n                        "
+                            "\n                        How do you feel about this statement?\n                        "
                           )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      question.question_type.name == "text"
-                        ? _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.form.responses[question.id],
-                                expression: "form.responses[question.id]"
-                              }
-                            ],
-                            staticClass:
-                              "w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                            attrs: { type: "text", name: question.id },
-                            domProps: {
-                              value: _vm.form.responses[question.id]
-                            },
-                            on: {
-                              input: function($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.$set(
-                                  _vm.form.responses,
-                                  question.id,
-                                  $event.target.value
-                                )
-                              }
-                            }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      question.question_type.name == "textarea"
-                        ? _c("textarea", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.form.responses[question.id],
-                                expression: "form.responses[ question.id ]"
-                              }
-                            ],
-                            staticClass:
-                              "w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                            attrs: { type: "text", name: question.id },
-                            domProps: {
-                              value: _vm.form.responses[question.id]
-                            },
-                            on: {
-                              input: function($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.$set(
-                                  _vm.form.responses,
-                                  question.id,
-                                  $event.target.value
-                                )
-                              }
-                            }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      question.question_type.name == "select"
-                        ? _c(
-                            "select",
-                            {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.form.responses[question.id],
-                                  expression: "form.responses[ question.id ]"
-                                }
-                              ],
-                              staticClass:
-                                "ml-3 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                              attrs: { type: "text", name: question.id },
-                              on: {
-                                change: function($event) {
-                                  var $$selectedVal = Array.prototype.filter
-                                    .call($event.target.options, function(o) {
-                                      return o.selected
-                                    })
-                                    .map(function(o) {
-                                      var val =
-                                        "_value" in o ? o._value : o.value
-                                      return val
-                                    })
-                                  _vm.$set(
-                                    _vm.form.responses,
-                                    question.id,
-                                    $event.target.multiple
-                                      ? $$selectedVal
-                                      : $$selectedVal[0]
-                                  )
-                                }
-                              }
-                            },
-                            _vm._l(question.options, function(value) {
-                              return _c(
-                                "option",
-                                { domProps: { value: value } },
-                                [_vm._v(_vm._s(value))]
-                              )
-                            }),
-                            0
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      question.question_type.name == "checkboxes"
-                        ? _c(
-                            "fieldset",
-                            _vm._l(question.options, function(value) {
-                              return _c("label", [
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.form.responses[question.id],
-                                      expression:
-                                        "form.responses[ question.id ]"
-                                    }
-                                  ],
-                                  attrs: {
-                                    type: "checkbox",
-                                    name: question.id + "[]"
-                                  },
-                                  domProps: {
-                                    value: value,
-                                    checked: Array.isArray(
-                                      _vm.form.responses[question.id]
-                                    )
-                                      ? _vm._i(
-                                          _vm.form.responses[question.id],
-                                          value
-                                        ) > -1
-                                      : _vm.form.responses[question.id]
-                                  },
-                                  on: {
-                                    change: function($event) {
-                                      var $$a = _vm.form.responses[question.id],
-                                        $$el = $event.target,
-                                        $$c = $$el.checked ? true : false
-                                      if (Array.isArray($$a)) {
-                                        var $$v = value,
-                                          $$i = _vm._i($$a, $$v)
-                                        if ($$el.checked) {
-                                          $$i < 0 &&
-                                            _vm.$set(
-                                              _vm.form.responses,
-                                              question.id,
-                                              $$a.concat([$$v])
-                                            )
-                                        } else {
-                                          $$i > -1 &&
-                                            _vm.$set(
-                                              _vm.form.responses,
-                                              question.id,
-                                              $$a
-                                                .slice(0, $$i)
-                                                .concat($$a.slice($$i + 1))
-                                            )
-                                        }
-                                      } else {
-                                        _vm.$set(
-                                          _vm.form.responses,
-                                          question.id,
-                                          $$c
-                                        )
-                                      }
-                                    }
-                                  }
-                                }),
-                                _vm._v(
-                                  "\n                                    " +
-                                    _vm._s(value) +
-                                    "\n                            "
-                                )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c(
+                      "h2",
+                      {
+                        staticClass:
+                          "text-5xl font-bold font-title leading-none text-white"
+                      },
+                      [
+                        _vm.step == 1
+                          ? _c("span", [
+                              _vm._v("Well done for taking "),
+                              _c("span", { staticClass: "pinkUnderline" }, [
+                                _vm._v("action!")
                               ])
-                            }),
-                            0
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      question.question_type.name == "radio"
-                        ? _c(
-                            "fieldset",
-                            _vm._l(question.options, function(value) {
-                              return _c("label", [
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.form.responses[question.id],
-                                      expression:
-                                        "form.responses[ question.id ]"
-                                    }
-                                  ],
-                                  attrs: { type: "radio", name: question.id },
-                                  domProps: {
-                                    value: value,
-                                    checked: _vm._q(
-                                      _vm.form.responses[question.id],
-                                      value
-                                    )
-                                  },
-                                  on: {
-                                    change: function($event) {
-                                      return _vm.$set(
-                                        _vm.form.responses,
-                                        question.id,
-                                        value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(
-                                  "\n                                " +
-                                    _vm._s(value) +
-                                    "\n                            "
-                                )
-                              ])
-                            }),
-                            0
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      question.children.length > 0
-                        ? _c(
-                            "div",
-                            { staticClass: "mt-6 w-full" },
-                            _vm._l(question.children, function(question) {
-                              return _c(
-                                "div",
-                                { staticClass: "flex flex-row flex-wrap" },
-                                [
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass:
-                                        "w-full text-gray-700 rounded-md py-2 text-lg mr-4",
-                                      attrs: { for: question.id }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                    " +
-                                          _vm._s(question.question_text) +
-                                          "\n                                "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  question.question_type.name == "text"
-                                    ? _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value:
-                                              _vm.form.responses[question.id],
-                                            expression:
-                                              "form.responses[ question.id ]"
-                                          }
-                                        ],
-                                        staticClass:
-                                          "w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                                        attrs: {
-                                          type: "text",
-                                          name: question.id
-                                        },
-                                        domProps: {
-                                          value: _vm.form.responses[question.id]
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.form.responses,
-                                              question.id,
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  question.question_type.name == "textarea"
-                                    ? _c("textarea", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value:
-                                              _vm.form.responses[question.id],
-                                            expression:
-                                              "form.responses[ question.id ]"
-                                          }
-                                        ],
-                                        staticClass:
-                                          "w-full md:w-1/2 bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                                        attrs: {
-                                          type: "text",
-                                          name: question.id
-                                        },
-                                        domProps: {
-                                          value: _vm.form.responses[question.id]
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.form.responses,
-                                              question.id,
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  question.question_type.name == "select"
-                                    ? _c(
-                                        "select",
-                                        {
-                                          directives: [
-                                            {
-                                              name: "model",
-                                              rawName: "v-model",
-                                              value:
-                                                _vm.form.responses[question.id],
-                                              expression:
-                                                "form.responses[ question.id ]"
-                                            }
-                                          ],
-                                          staticClass:
-                                            " bg-blue-100 text-gray-700 rounded-md px-3 py-2 text-lg",
-                                          attrs: {
-                                            type: "text",
-                                            name: question.id
-                                          },
-                                          on: {
-                                            change: function($event) {
-                                              var $$selectedVal = Array.prototype.filter
-                                                .call(
-                                                  $event.target.options,
-                                                  function(o) {
-                                                    return o.selected
-                                                  }
-                                                )
-                                                .map(function(o) {
-                                                  var val =
-                                                    "_value" in o
-                                                      ? o._value
-                                                      : o.value
-                                                  return val
-                                                })
-                                              _vm.$set(
-                                                _vm.form.responses,
-                                                question.id,
-                                                $event.target.multiple
-                                                  ? $$selectedVal
-                                                  : $$selectedVal[0]
-                                              )
-                                            }
-                                          }
-                                        },
-                                        _vm._l(question.options, function(
-                                          value
-                                        ) {
-                                          return _c(
-                                            "option",
-                                            { domProps: { value: value } },
-                                            [_vm._v(_vm._s(value))]
-                                          )
-                                        }),
-                                        0
-                                      )
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  question.question_type.name == "checkboxes"
-                                    ? _c(
-                                        "fieldset",
-                                        _vm._l(question.options, function(
-                                          value
-                                        ) {
-                                          return _c("label", [
-                                            _c("input", {
-                                              directives: [
-                                                {
-                                                  name: "model",
-                                                  rawName: "v-model",
-                                                  value:
-                                                    _vm.form.responses[
-                                                      question.id
-                                                    ],
-                                                  expression:
-                                                    "form.responses[ question.id ]"
-                                                }
-                                              ],
-                                              attrs: {
-                                                type: "checkbox",
-                                                name: question.id + "[]"
-                                              },
-                                              domProps: {
-                                                value: value,
-                                                checked: Array.isArray(
-                                                  _vm.form.responses[
-                                                    question.id
-                                                  ]
-                                                )
-                                                  ? _vm._i(
-                                                      _vm.form.responses[
-                                                        question.id
-                                                      ],
-                                                      value
-                                                    ) > -1
-                                                  : _vm.form.responses[
-                                                      question.id
-                                                    ]
-                                              },
-                                              on: {
-                                                change: function($event) {
-                                                  var $$a =
-                                                      _vm.form.responses[
-                                                        question.id
-                                                      ],
-                                                    $$el = $event.target,
-                                                    $$c = $$el.checked
-                                                      ? true
-                                                      : false
-                                                  if (Array.isArray($$a)) {
-                                                    var $$v = value,
-                                                      $$i = _vm._i($$a, $$v)
-                                                    if ($$el.checked) {
-                                                      $$i < 0 &&
-                                                        _vm.$set(
-                                                          _vm.form.responses,
-                                                          question.id,
-                                                          $$a.concat([$$v])
-                                                        )
-                                                    } else {
-                                                      $$i > -1 &&
-                                                        _vm.$set(
-                                                          _vm.form.responses,
-                                                          question.id,
-                                                          $$a
-                                                            .slice(0, $$i)
-                                                            .concat(
-                                                              $$a.slice($$i + 1)
-                                                            )
-                                                        )
-                                                    }
-                                                  } else {
-                                                    _vm.$set(
-                                                      _vm.form.responses,
-                                                      question.id,
-                                                      $$c
-                                                    )
-                                                  }
-                                                }
-                                              }
-                                            }),
-                                            _vm._v(
-                                              "\n                                            " +
-                                                _vm._s(value) +
-                                                "\n                                    "
-                                            )
-                                          ])
-                                        }),
-                                        0
-                                      )
-                                    : _vm._e(),
-                                  _vm._v(" "),
-                                  question.question_type.name == "radio"
-                                    ? _c(
-                                        "fieldset",
-                                        _vm._l(question.options, function(
-                                          value
-                                        ) {
-                                          return _c("label", [
-                                            _c("input", {
-                                              directives: [
-                                                {
-                                                  name: "model",
-                                                  rawName: "v-model",
-                                                  value:
-                                                    _vm.form.responses[
-                                                      question.id
-                                                    ],
-                                                  expression:
-                                                    "form.responses[ question.id ]"
-                                                }
-                                              ],
-                                              attrs: {
-                                                type: "radio",
-                                                name: question.id
-                                              },
-                                              domProps: {
-                                                value: value,
-                                                checked: _vm._q(
-                                                  _vm.form.responses[
-                                                    question.id
-                                                  ],
-                                                  value
-                                                )
-                                              },
-                                              on: {
-                                                change: function($event) {
-                                                  return _vm.$set(
-                                                    _vm.form.responses,
-                                                    question.id,
-                                                    value
-                                                  )
-                                                }
-                                              }
-                                            }),
-                                            _vm._v(
-                                              "\n                                        " +
-                                                _vm._s(value) +
-                                                "\n                                    "
-                                            )
-                                          ])
-                                        }),
-                                        0
-                                      )
-                                    : _vm._e()
-                                ]
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 3
+                          ? _c("span", [
+                              _vm._v(
+                                "People of color are well-represented in my company’s leadership."
                               )
-                            }),
-                            0
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 5
+                          ? _c("span", [
+                              _vm._v("My company is racially diverse.")
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 7
+                          ? _c("span", [
+                              _vm._v(
+                                "In my opinion, people of color can be themselves at my company."
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 9
+                          ? _c("span", [
+                              _vm._v(
+                                "Race has an impact on performance reviews or compensation at my company."
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 11
+                          ? _c("span", [
+                              _vm._v(
+                                "My company’s leadership cares about issues that specifically affect people of color."
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step == 13
+                          ? _c("span", [
+                              _vm._v(
+                                "People of color receive equal treatment at my company."
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.step >= 4 && _vm.step % 2 != 1 && _vm.step <= 14
+                          ? _c("span", [_vm._v("What makes you say that?")])
+                          : _vm._e()
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm.step == 1
+                      ? _c("h4", { staticClass: "text-white text-xl mt-8" }, [
+                          _vm._v(
+                            "\n                        Thanks for deciding to write an anonymous review. By telling us what you’ve witnessed and experienced, you can help other people figure out if your employer is right for them.\n                        "
                           )
-                        : _vm._e()
-                    ]
-                  )
-                ])
-              }),
-              _vm._v(" "),
-              _vm._l(_vm.parentQuestions, function(question, index) {
-                return _c("div", { staticClass: "flex flex-row mt-8" }, [
-                  index == 0 && _vm.current_question == "company"
-                    ? _c("div", { staticClass: "w-full flex flex-row" }, [
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.step >= 3 && _vm.step % 2 == 1 && _vm.step <= 14
+                      ? _c(
+                          "select",
+                          {
+                            staticClass:
+                              "text-2xl rounded-lg w-full flex px-4 py-6 mt-10"
+                          },
+                          [
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Select your Answer")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Strongly disagree")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Disagree")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Neither agree nor disagree")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Agree")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "0" } }, [
+                              _vm._v("Strongly agree")
+                            ])
+                          ]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.step >= 4 && _vm.step % 2 != 1 && _vm.step <= 14
+                      ? _c("textarea", {
+                          staticClass: "w-full flex rounded-md p-4 mt-10",
+                          attrs: {
+                            rows: "8",
+                            placeholder:
+                              "Try to tell us why you chose that answer."
+                          }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "w-full flex flex-row flex-wrap mt-10" },
+                      [
+                        _c("div", { staticClass: "w-1/2" }),
+                        _vm._v(" "),
                         _c(
                           "div",
-                          { staticClass: "flex flex-row justify-end w-full" },
+                          { staticClass: "w-1/2 flex flex-row justify-end" },
                           [
                             _c(
                               "span",
                               {
                                 staticClass:
-                                  "bg-blue-200 py-2 px-3 rounded-md cursor-pointer",
+                                  "cursor-pointer px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md",
                                 on: {
                                   click: function($event) {
-                                    return _vm.setCurrentQuestion(question.id)
+                                    _vm.step = _vm.step + 1
                                   }
                                 }
                               },
-                              [_vm._v("Next ->")]
+                              [_vm._v("Continue")]
                             )
                           ]
                         )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  index == 0 && _vm.current_question == question.id
-                    ? _c("div", { staticClass: "w-1/2" }, [
-                        _c("div", { staticClass: "flex flex-row" }, [
-                          _c(
-                            "span",
-                            {
-                              staticClass:
-                                "bg-blue-200 py-2 px-3 rounded-md cursor-pointer",
-                              on: {
-                                click: function($event) {
-                                  return _vm.setCurrentQuestion("company")
-                                }
-                              }
-                            },
-                            [_vm._v("<- Previous")]
-                          )
-                        ])
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  index > 0 && _vm.current_question == question.id
-                    ? _c("div", { staticClass: "w-1/2" }, [
-                        _c("div", { staticClass: "flex flex-row" }, [
-                          _c(
-                            "span",
-                            {
-                              staticClass:
-                                "bg-blue-200 py-2 px-3 rounded-md cursor-pointer",
-                              on: {
-                                click: function($event) {
-                                  return _vm.setCurrentQuestion(
-                                    _vm.parentQuestions[index - 1].id
-                                  )
-                                }
-                              }
-                            },
-                            [_vm._v("<- Previous")]
-                          )
-                        ])
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  index < _vm.parentQuestionCount - 1 &&
-                  _vm.current_question == question.id
-                    ? _c(
-                        "div",
-                        { staticClass: "w-1/2 flex flex-row justify-end" },
-                        [
-                          _c("div", { staticClass: "w-1/2  flex flex-row" }, [
-                            _c(
-                              "span",
-                              {
-                                staticClass: "py-2 px-3 cursor-pointer",
-                                on: {
-                                  click: function($event) {
-                                    return _vm.setCurrentQuestion(
-                                      _vm.parentQuestions[index + 1].id
-                                    )
-                                  }
-                                }
-                              },
-                              [_vm._v("Skip ->")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "w-1/2 flex flex-row justify-end" },
-                            [
-                              _c(
-                                "span",
-                                {
-                                  staticClass:
-                                    "bg-blue-200 py-2 px-3 rounded-md cursor-pointer",
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.setCurrentQuestion(
-                                        _vm.parentQuestions[index + 1].id
-                                      )
-                                    }
-                                  }
-                                },
-                                [_vm._v("Next ->")]
-                              )
-                            ]
-                          )
-                        ]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  index == _vm.parentQuestionCount - 1 &&
-                  _vm.current_question == question.id
-                    ? _c(
-                        "div",
-                        { staticClass: "w-1/2 flex flex-row justify-end" },
-                        [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "bg-teal-500 rounded-md text-white px-3 py-2",
-                              attrs: { type: "submit" }
-                            },
-                            [_vm._v("Submit")]
-                          )
-                        ]
-                      )
-                    : _vm._e()
-                ])
-              })
-            ],
-            2
-          )
-        ]
-      )
-    ])
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-2/5 pt-8" }, [
+              _c("img", { attrs: { src: "/images/sittingtwo.png" } })
+            ])
+          ]
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = []
