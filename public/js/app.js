@@ -3733,6 +3733,228 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3747,8 +3969,38 @@ __webpack_require__.r(__webpack_exports__);
     return {
       company_name: "0",
       current_question: "company",
-      steps: 0,
-      step: 1
+      steps: 15,
+      step: 16,
+      response: {
+        company: "",
+        location: "",
+        question1: "People of color are well-represented in my company’s leadership.",
+        response1: 0,
+        story1: "",
+        question2: "My company is racially diverse.",
+        response2: 0,
+        story2: "",
+        question3: "In my opinion, people of color can be themselves at my company.",
+        response3: 0,
+        story3: "",
+        question4: "Race has an impact on performance reviews or compensation at my company.",
+        response4: 0,
+        story4: "",
+        question5: "My company’s leadership cares about issues that specifically affect people of color.",
+        response5: 0,
+        story5: "",
+        question6: "People of color receive equal treatment at my company.",
+        response6: 0,
+        story6: "",
+        role: "",
+        timeAtCompany: 0,
+        email: "",
+        gender: "",
+        race: "",
+        age: "",
+        religion: "",
+        disability: ""
+      }
     };
   },
   computed: {// parentQuestions: function() {
@@ -3762,17 +4014,14 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.$forceUpdate();
-      this.$inertia.post('/your-experience', this.form, {
+      this.$inertia.post('/your-experience', this.response, {
         onStart: function onStart() {
           return _this.sending = true;
         },
         onFinish: function onFinish() {
-          return _this.sending = false;
+          return _this.step = 17;
         }
       });
-    },
-    setCurrentQuestion: function setCurrentQuestion(q) {
-      this.current_question = q;
     }
   }
 });
@@ -26793,233 +27042,1942 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("public-app-layout", [
-    _c(
-      "div",
-      {
-        staticClass: "py-24 bg-top bg-cover h-screen",
-        staticStyle: { "background-image": "url('/images/ivbga.jpg')" }
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "container w-full mx-auto flex flex-row flex-wrap" },
-          [
-            _c("div", { staticClass: "lg:w-3/5 sm:px-6 lg:px-8" }, [
+    _c("div", [
+      _vm.step < 16
+        ? _c(
+            "div",
+            {
+              staticClass: "py-24 bg-top bg-cover min-h-screen",
+              staticStyle: { "background-image": "url('/images/ivbga.jpg')" }
+            },
+            [
               _c(
-                "form",
+                "div",
                 {
-                  attrs: { enctype: "multipart/form-data" },
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.submit($event)
-                    }
-                  }
+                  staticClass:
+                    "container w-full mx-auto flex flex-row flex-wrap"
                 },
                 [
-                  _c("div", { staticClass: "lg:pr-12" }, [
-                    _c(
-                      "h3",
-                      {
-                        staticClass:
-                          "pinkUnderline text-white text-xl inline-block mb-8 "
-                      },
-                      [
-                        _vm.step == 3 || _vm.step == 4
-                          ? _c("span", [_vm._v("Representation")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 5 || _vm.step == 6
-                          ? _c("span", [_vm._v("Diversity")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 7 || _vm.step == 8
-                          ? _c("span", [_vm._v("Inclusion")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 9 || _vm.step == 10
-                          ? _c("span", [_vm._v("Fairness")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 11 || _vm.step == 12
-                          ? _c("span", [_vm._v("Advocacy")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 13 || _vm.step == 14
-                          ? _c("span", [_vm._v("Treatment")])
-                          : _vm._e()
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _vm.step > 2 && _vm.step < 14 && _vm.step % 2 != 0
-                      ? _c("h4", { staticClass: "text-white text-lg" }, [
-                          _vm._v(
-                            "\n                        How do you feel about this statement?\n                        "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c(
-                      "h2",
-                      {
-                        staticClass:
-                          "text-5xl font-bold font-title leading-none text-white"
-                      },
-                      [
-                        _vm.step == 1
-                          ? _c("span", [
-                              _vm._v("Well done for taking "),
-                              _c("span", { staticClass: "pinkUnderline" }, [
-                                _vm._v("action!")
-                              ])
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 3
-                          ? _c("span", [
-                              _vm._v(
-                                "People of color are well-represented in my company’s leadership."
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 5
-                          ? _c("span", [
-                              _vm._v("My company is racially diverse.")
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 7
-                          ? _c("span", [
-                              _vm._v(
-                                "In my opinion, people of color can be themselves at my company."
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 9
-                          ? _c("span", [
-                              _vm._v(
-                                "Race has an impact on performance reviews or compensation at my company."
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 11
-                          ? _c("span", [
-                              _vm._v(
-                                "My company’s leadership cares about issues that specifically affect people of color."
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step == 13
-                          ? _c("span", [
-                              _vm._v(
-                                "People of color receive equal treatment at my company."
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.step >= 4 && _vm.step % 2 != 1 && _vm.step <= 14
-                          ? _c("span", [_vm._v("What makes you say that?")])
-                          : _vm._e()
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _vm.step == 1
-                      ? _c("h4", { staticClass: "text-white text-xl mt-8" }, [
-                          _vm._v(
-                            "\n                        Thanks for deciding to write an anonymous review. By telling us what you’ve witnessed and experienced, you can help other people figure out if your employer is right for them.\n                        "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.step >= 3 && _vm.step % 2 == 1 && _vm.step <= 14
-                      ? _c(
-                          "select",
-                          {
-                            staticClass:
-                              "text-2xl rounded-lg w-full flex px-4 py-6 mt-10"
-                          },
-                          [
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Select your Answer")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Strongly disagree")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Disagree")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Neither agree nor disagree")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Agree")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Strongly agree")
-                            ])
-                          ]
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _vm.step >= 4 && _vm.step % 2 != 1 && _vm.step <= 14
-                      ? _c("textarea", {
-                          staticClass: "w-full flex rounded-md p-4 mt-10",
-                          attrs: {
-                            rows: "8",
-                            placeholder:
-                              "Try to tell us why you chose that answer."
+                  _c(
+                    "div",
+                    { staticClass: "w-full lg:w-3/5 sm:px-6 lg:px-8" },
+                    [
+                      _c(
+                        "form",
+                        {
+                          attrs: { enctype: "multipart/form-data" },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              return _vm.submit($event)
+                            }
                           }
-                        })
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "w-full flex flex-row flex-wrap mt-10" },
-                      [
-                        _c("div", { staticClass: "w-1/2" }),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "w-1/2 flex flex-row justify-end" },
-                          [
+                        },
+                        [
+                          _c("div", { staticClass: "lg:pr-12" }, [
                             _c(
-                              "span",
+                              "div",
+                              { staticStyle: { "min-height": "30rem" } },
+                              [
+                                _c(
+                                  "h3",
+                                  {
+                                    staticClass:
+                                      "pinkUnderline text-white text-xl inline-block mb-8 "
+                                  },
+                                  [
+                                    _vm.step == 3 || _vm.step == 4
+                                      ? _c("span", [_vm._v("Representation")])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 5 || _vm.step == 6
+                                      ? _c("span", [_vm._v("Diversity")])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 7 || _vm.step == 8
+                                      ? _c("span", [_vm._v("Inclusion")])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 9 || _vm.step == 10
+                                      ? _c("span", [_vm._v("Fairness")])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 11 || _vm.step == 12
+                                      ? _c("span", [_vm._v("Advocacy")])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 13 || _vm.step == 14
+                                      ? _c("span", [_vm._v("Treatment")])
+                                      : _vm._e()
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _vm.step > 2 &&
+                                _vm.step < 14 &&
+                                _vm.step % 2 != 0
+                                  ? _c(
+                                      "h4",
+                                      { staticClass: "text-white text-lg" },
+                                      [
+                                        _vm._v(
+                                          "\n                            How do you feel about this statement?\n                            "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _c(
+                                  "h2",
+                                  {
+                                    staticClass:
+                                      "text-5xl font-bold font-title leading-none text-white mb-10"
+                                  },
+                                  [
+                                    _vm.step == 1
+                                      ? _c("span", [
+                                          _vm._v("Well done for taking "),
+                                          _c(
+                                            "span",
+                                            { staticClass: "pinkUnderline" },
+                                            [_vm._v("action!")]
+                                          )
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 2
+                                      ? _c("span", [
+                                          _vm._v(
+                                            "Tell us a little bit about your company."
+                                          )
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 3
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question1))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 5
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question2))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 7
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question3))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 9
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question4))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 11
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question5))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 13
+                                      ? _c("span", [
+                                          _vm._v(_vm._s(_vm.response.question6))
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step >= 4 &&
+                                    _vm.step % 2 != 1 &&
+                                    _vm.step <= 14
+                                      ? _c("span", [
+                                          _vm._v("What makes you say that?")
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 15
+                                      ? _c("span", [
+                                          _vm._v(
+                                            "Finally, tell us a little bit about yourself."
+                                          )
+                                        ])
+                                      : _vm._e()
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _vm.step == 1
+                                  ? _c(
+                                      "h4",
+                                      {
+                                        staticClass: "text-white text-xl mt-8"
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                            Thanks for deciding to write an anonymous review. By telling us what you’ve witnessed and experienced, you can help other people figure out if your employer is right for them.\n                            "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 2
+                                  ? _c("div", {}, [
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "companyName" }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "What is the name of your current or most recent employer?"
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.company,
+                                            expression: "response.company"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: {
+                                          value: _vm.response.company
+                                        },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "company",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "companyName" }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "What is your primary work location?"
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.location,
+                                            expression: "response.location"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: {
+                                          value: _vm.response.location
+                                        },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "location",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      })
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 15
+                                  ? _c("div", {}, [
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "role" }
+                                        },
+                                        [_vm._v("What is your role/job title?")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.role,
+                                            expression: "response.role"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: { value: _vm.response.role },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "role",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "role" }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "How long have you worked at your company?"
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "select",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.response.timeAtCompany,
+                                              expression:
+                                                "response.timeAtCompany"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "text-2xl rounded-lg w-full flex px-4 py-4",
+                                          on: {
+                                            change: function($event) {
+                                              var $$selectedVal = Array.prototype.filter
+                                                .call(
+                                                  $event.target.options,
+                                                  function(o) {
+                                                    return o.selected
+                                                  }
+                                                )
+                                                .map(function(o) {
+                                                  var val =
+                                                    "_value" in o
+                                                      ? o._value
+                                                      : o.value
+                                                  return val
+                                                })
+                                              _vm.$set(
+                                                _vm.response,
+                                                "timeAtCompany",
+                                                $event.target.multiple
+                                                  ? $$selectedVal
+                                                  : $$selectedVal[0]
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "0" } },
+                                            [_vm._v("Select your Answer")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "1" } },
+                                            [_vm._v("0 to 6 months")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "2" } },
+                                            [_vm._v("7 to 11 months")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "3" } },
+                                            [_vm._v("1 to 2 years")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "4" } },
+                                            [_vm._v("3 to 5 years")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "5" } },
+                                            [_vm._v("6 to 10 years")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "option",
+                                            { attrs: { value: "6" } },
+                                            [_vm._v("10 years or more")]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "" }
+                                        },
+                                        [_vm._v("Gender")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.gender,
+                                            expression: "response.gender"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: {
+                                          value: _vm.response.gender
+                                        },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "gender",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "" }
+                                        },
+                                        [_vm._v("Race")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.race,
+                                            expression: "response.race"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: { value: _vm.response.race },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "race",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "" }
+                                        },
+                                        [_vm._v("Age")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.age,
+                                            expression: "response.age"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: { value: _vm.response.age },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "age",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "" }
+                                        },
+                                        [_vm._v("Religion")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.religion,
+                                            expression: "response.religion"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: {
+                                          value: _vm.response.religion
+                                        },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "religion",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "label",
+                                        {
+                                          staticClass:
+                                            "w-full text-white text-xl mb-4 block",
+                                          attrs: { for: "" }
+                                        },
+                                        [_vm._v("Disability")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.disability,
+                                            expression: "response.disability"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "w-full text-2xl px-4 py-4 rounded-lg mb-4 block",
+                                        attrs: { type: "text" },
+                                        domProps: {
+                                          value: _vm.response.disability
+                                        },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.response,
+                                              "disability",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      })
+                                    ])
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 3
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response1,
+                                            expression: "response.response1"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response1",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 5
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response2,
+                                            expression: "response.response2"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response2",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 7
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response3,
+                                            expression: "response.response3"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response3",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 9
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response4,
+                                            expression: "response.response4"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response4",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 11
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response5,
+                                            expression: "response.response5"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response5",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 13
+                                  ? _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.response.response6,
+                                            expression: "response.response6"
+                                          }
+                                        ],
+                                        staticClass:
+                                          "text-2xl rounded-lg w-full flex px-4 py-4",
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.response,
+                                              "response6",
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "0" } },
+                                          [_vm._v("Select your Answer")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "1" } },
+                                          [_vm._v("Strongly disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "2" } },
+                                          [_vm._v("Disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "3" } },
+                                          [_vm._v("Neither agree nor disagree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "4" } },
+                                          [_vm._v("Agree")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "option",
+                                          { attrs: { value: "5" } },
+                                          [_vm._v("Strongly agree")]
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 4
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story4,
+                                          expression: "story4"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story4 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story4 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 6
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story6,
+                                          expression: "story6"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story6 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story6 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 8
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story8,
+                                          expression: "story8"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story8 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story8 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 10
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story10,
+                                          expression: "story10"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story10 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story10 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 12
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story12,
+                                          expression: "story12"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story12 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story12 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 14
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.story14,
+                                          expression: "story14"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: {
+                                        rows: "8",
+                                        placeholder:
+                                          "Try to tell us why you chose that answer."
+                                      },
+                                      domProps: { value: _vm.story14 },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.story14 = $event.target.value
+                                        }
+                                      }
+                                    })
+                                  : _vm._e()
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
                               {
                                 staticClass:
-                                  "cursor-pointer px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md",
-                                on: {
-                                  click: function($event) {
-                                    _vm.step = _vm.step + 1
-                                  }
-                                }
+                                  "w-full flex flex-row flex-wrap mt-10"
                               },
-                              [_vm._v("Continue")]
+                              [
+                                _c("div", { staticClass: "w-1/2" }, [
+                                  _vm.step <= 15
+                                    ? _c("div", { staticClass: "w-1/2" }, [
+                                        _c(
+                                          "span",
+                                          { staticClass: "text-white" },
+                                          [
+                                            _vm._v(
+                                              _vm._s(
+                                                Math.ceil(
+                                                  (_vm.step / _vm.steps) * 100
+                                                )
+                                              ) + "%"
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "bg-white h-2 rounded-full mt-2"
+                                          },
+                                          [
+                                            _c("span", {
+                                              staticClass:
+                                                "rounded-full h-2 bg-light-green block",
+                                              style:
+                                                "width: " +
+                                                Math.ceil(
+                                                  (_vm.step / _vm.steps) * 100
+                                                ) +
+                                                "%"
+                                            })
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "w-full flex flex-row pt-4"
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass: "w-1/2 text-white"
+                                              },
+                                              [
+                                                _vm.step > 1
+                                                  ? _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "cursor-pointer",
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            _vm.step =
+                                                              _vm.step - 1
+                                                          }
+                                                        }
+                                                      },
+                                                      [_vm._v("← Back")]
+                                                    )
+                                                  : _vm._e()
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "w-1/2 text-light-green text-right"
+                                              },
+                                              [
+                                                _c(
+                                                  "span",
+                                                  {
+                                                    staticClass:
+                                                      "cursor-pointer",
+                                                    on: {
+                                                      click: function($event) {
+                                                        _vm.step = _vm.step + 1
+                                                      }
+                                                    }
+                                                  },
+                                                  [_vm._v("Skip")]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    : _vm._e()
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "w-1/2 flex flex-row justify-end"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "flex flex-col justify-end select-none "
+                                      },
+                                      [
+                                        _vm.step <= 15
+                                          ? _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "cursor-pointer flex px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md",
+                                                on: {
+                                                  click: function($event) {
+                                                    _vm.step = _vm.step + 1
+                                                  }
+                                                }
+                                              },
+                                              [_vm._v("Continue")]
+                                            )
+                                          : _vm._e()
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
                             )
-                          ]
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "hidden lg:flex w-2/5 pt-8" }, [
+                    _c("div", [
+                      _c("img", { attrs: { src: "/images/sittingtwo.png" } })
+                    ])
+                  ])
+                ]
+              )
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.step == 16
+        ? _c("div", [
+            _c("div", { staticClass: "bg-green" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0"
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "w-full h-full items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12 pb-4 md:pb-12 xl:pb-32"
+                    },
+                    [
+                      _c(
+                        "h1",
+                        {
+                          staticClass:
+                            "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
+                        },
+                        [
+                          _vm._v(
+                            "Please review your responses. Once you’re happy, press Finish."
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "text-white text-xl leading-loose" },
+                        [
+                          _vm._v(
+                            "You can change your answers and edit your stories by clicking Edit below."
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "bg-white" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0"
+                },
+                [
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Representation")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question1))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response1 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response1 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response1 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response1 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response1 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response1 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 3
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story1))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Diversity")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question2))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response2 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response2 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response2 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response2 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response2 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response2 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 5
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story2))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Inclusion")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question3))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response3 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response3 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response3 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response3 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response3 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response3 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 7
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story3))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Fairness")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question4))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response4 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response4 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response4 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response4 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response4 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response4 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 9
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story4))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Advocacy")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question5))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response5 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response5 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response5 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response5 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response5 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response5 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 11
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story5))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full" }, [
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "mt-6 pinkUnderline text-black text-xl inline-block"
+                        },
+                        [_vm._v("Treatment")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h4",
+                      {
+                        staticClass:
+                          "mt-8 mb-8 font-title text-3xl w-full font-bold text-black"
+                      },
+                      [_vm._v(_vm._s(_vm.response.question6))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "w-full text-2xl font-title mb-4 font-bold"
+                      },
+                      [_vm._v("You Answered:")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl mb-6" }, [
+                      _vm.response.response6 == 0
+                        ? _c("span", [_vm._v("Skipped")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response6 == 1
+                        ? _c("span", [_vm._v("Strongly disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response6 == 2
+                        ? _c("span", [_vm._v("Disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response6 == 3
+                        ? _c("span", [_vm._v("Neither agree nor disagree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response6 == 4
+                        ? _c("span", [_vm._v("Agree")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.response.response6 == 5
+                        ? _c("span", [_vm._v("Strongly agree")])
+                        : _vm._e(),
+                      _vm._v("\n                        - "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "underline",
+                          on: {
+                            click: function($event) {
+                              _vm.step = 2
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full text-xl" }, [
+                      _vm._v(_vm._s(_vm.response.story6))
+                    ]),
+                    _vm._v(" "),
+                    _c("hr", { staticClass: "opacity-50" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-full flex flex-row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full justify-end select-none mt-8 mb-10"
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "cursor-pointer px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md",
+                            on: { click: _vm.submit }
+                          },
+                          [_vm._v("Finish →")]
                         )
                       ]
                     )
                   ])
                 ]
               )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-2/5 pt-8" }, [
-              _c("img", { attrs: { src: "/images/sittingtwo.png" } })
             ])
-          ]
-        )
-      ]
-    )
+          ])
+        : _vm._e()
+    ])
   ])
 }
 var staticRenderFns = []
