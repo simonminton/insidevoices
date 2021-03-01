@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\RespondentController;
+use App\Http\Controllers\ResponseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,4 +50,4 @@ Route::get('/companies', [CompanyController::class, 'index'])->name('companies.p
 Route::get('/companies/{company}', [CompanyController::class, 'show'])->name('companies.show.public');
 
 Route::get('/your-story', [RespondentController::class, 'create'])->name('experience.public');
-Route::post('/your-story', [RespondentController::class, 'store'])->name('experience.submit');
+Route::post('/your-story', [ResponseController::class, 'store'])->name('experience.submit');

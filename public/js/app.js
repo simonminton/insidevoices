@@ -3955,6 +3955,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3970,7 +3983,7 @@ __webpack_require__.r(__webpack_exports__);
       company_name: "0",
       current_question: "company",
       steps: 15,
-      step: 16,
+      step: 1,
       response: {
         company: "",
         location: "",
@@ -4014,13 +4027,11 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.$forceUpdate();
-      this.$inertia.post('/your-experience', this.response, {
-        onStart: function onStart() {
-          return _this.sending = true;
-        },
-        onFinish: function onFinish() {
-          return _this.step = 17;
-        }
+      axios.post('/your-story', this.response).then(function (response) {
+        console.log(response.data);
+        _this.step = 17;
+      })["catch"](function (error) {
+        console.log(error.response);
       });
     }
   }
@@ -28127,8 +28138,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story4,
-                                          expression: "story4"
+                                          value: _vm.response.story1,
+                                          expression: "response.story1"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28137,13 +28148,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story4 },
+                                      domProps: { value: _vm.response.story1 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story4 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story1",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28155,8 +28170,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story6,
-                                          expression: "story6"
+                                          value: _vm.response.story2,
+                                          expression: "response.story2"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28165,13 +28180,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story6 },
+                                      domProps: { value: _vm.response.story2 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story6 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story2",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28183,8 +28202,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story8,
-                                          expression: "story8"
+                                          value: _vm.response.story3,
+                                          expression: "response.story3"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28193,13 +28212,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story8 },
+                                      domProps: { value: _vm.response.story3 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story8 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story3",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28211,8 +28234,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story10,
-                                          expression: "story10"
+                                          value: _vm.response.story4,
+                                          expression: "response.story4"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28221,13 +28244,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story10 },
+                                      domProps: { value: _vm.response.story4 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story10 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story4",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28239,8 +28266,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story12,
-                                          expression: "story12"
+                                          value: _vm.response.story5,
+                                          expression: "response.story5"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28249,13 +28276,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story12 },
+                                      domProps: { value: _vm.response.story5 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story12 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story5",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28267,8 +28298,8 @@ var render = function() {
                                         {
                                           name: "model",
                                           rawName: "v-model",
-                                          value: _vm.story14,
-                                          expression: "story14"
+                                          value: _vm.response.story6,
+                                          expression: "response.story6"
                                         }
                                       ],
                                       staticClass: "w-full flex rounded-md p-4",
@@ -28277,13 +28308,17 @@ var render = function() {
                                         placeholder:
                                           "Try to tell us why you chose that answer."
                                       },
-                                      domProps: { value: _vm.story14 },
+                                      domProps: { value: _vm.response.story6 },
                                       on: {
                                         input: function($event) {
                                           if ($event.target.composing) {
                                             return
                                           }
-                                          _vm.story14 = $event.target.value
+                                          _vm.$set(
+                                            _vm.response,
+                                            "story6",
+                                            $event.target.value
+                                          )
                                         }
                                       }
                                     })
@@ -28975,6 +29010,63 @@ var render = function() {
                 ]
               )
             ])
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.step == 17
+        ? _c("div", [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "relative bg-black flex flex-col w-full h-96 bg-cover bg-right",
+                staticStyle: {
+                  "background-image": "url('/images/how-it-works-bg.jpg')"
+                }
+              },
+              [
+                _c("div", {
+                  staticClass:
+                    "absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black"
+                }),
+                _vm._v(" "),
+                _c("x-navigation"),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "container px-8 lg:px-0 relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center "
+                  },
+                  [
+                    _c("div", { staticClass: "w-full lg:w-1/2" }, [
+                      _c(
+                        "h1",
+                        {
+                          staticClass:
+                            "font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide"
+                        },
+                        [_vm._v("Thank you for sharing")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "text-white text-xl w-full md:w-2/3 mb-12"
+                        },
+                        [
+                          _vm._v(
+                            "Your review will be posted soon. Check back to see if people find your review helpful."
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ],
+              1
+            )
           ])
         : _vm._e()
     ])

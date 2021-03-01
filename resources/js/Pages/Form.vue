@@ -120,12 +120,12 @@
                                     <option value="5">Strongly agree</option>
                                 </select>
 
-                                <textarea v-if="step == 4" v-model="story4" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
-                                <textarea v-if="step == 6" v-model="story6" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
-                                <textarea v-if="step == 8" v-model="story8" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
-                                <textarea v-if="step == 10" v-model="story10" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
-                                <textarea v-if="step == 12" v-model="story12" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
-                                <textarea v-if="step == 14" v-model="story14" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 4" v-model="response.story1" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 6" v-model="response.story2" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 8" v-model="response.story3" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 10" v-model="response.story4" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 12" v-model="response.story5" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                <textarea v-if="step == 14" v-model="response.story6" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
                                 </div>
                                 <div class="w-full flex flex-row flex-wrap mt-10">
                                     <div class="w-1/2">
@@ -281,6 +281,19 @@
                     </div>
                 </div>
             </div>
+            <div v-if="step == 17">
+                <div class="relative bg-black flex flex-col w-full h-96 bg-cover bg-right" style="background-image: url('/images/how-it-works-bg.jpg')">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black"></div>
+                    <x-navigation></x-navigation>
+                    <div class="container px-8 lg:px-0 relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
+                        <div class="w-full lg:w-1/2">
+                            <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Thank you for sharing</h1>
+                            <p class="text-white text-xl w-full md:w-2/3 mb-12">Your review will be posted soon. Check back to see if people find your review helpful.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </public-app-layout>
 </template>
@@ -302,7 +315,7 @@ import Button from '../Jetstream/Button.vue'
                 company_name: "0",
                 current_question: "company",
                 steps: 15,
-                step: 16,
+                step: 1,
                 response: {
                     company: "",
                     location: "",
@@ -349,10 +362,12 @@ import Button from '../Jetstream/Button.vue'
         methods: {
             submit() {
                 this.$forceUpdate()
-                 this.$inertia.post('/your-experience', this.response, {
-                     onStart: () => this.sending = true,
-                     onFinish: () => this.step = 17,
-                 })
+                 axios.post('/your-story', this.response)
+                .then(response => {
+                    console.log(response.data);
+                    this.step = 17;
+                }).catch(error => { console.log(error.response) });
+                 
             }
         }
     }
