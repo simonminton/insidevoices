@@ -24,7 +24,7 @@
             <div class="container px-8 lg:px-0 relative mx-auto flex-row flex-wrap flex pt-4 h-full items-center ">
                 <div class="w-full lg:w-1/2">
                     <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share your story</h1>
-                    <p class="text-white text-xl w-full md:w-2/3 mb-12">We want to know how your company performs when it comes to diversity, equity and inclusion. Whether you’re a person of color or an ally, anonymously review your employer so we can see how they measure up against others.</p>
+                    <p class="text-white text-xl w-full md:w-2/3 mb-12">Whether you’re a person of color or an ally, we want to know how your company performs when it comes to diversity, equity and inclusion.</p>
                     <a href="/your-story" class="rounded-md inline-flex bg-light-green px-5 py-4 text-dark-grey font-bold text-lg md:text-xl">Share Now</a>
                 </div>
             </div>
@@ -33,12 +33,12 @@
          <div class="relative bg-white flex flex-col w-full bg-cover" id="how-it-works">
             <div class="px-8 lg:px-0 container mx-auto flex-row flex-wrap flex py-20 lg:py-32">
                 <div class="w-full">
-                    <h1 class="font-title text-5xl lg:text-6xl mb-10 lg:mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>
+                    <h1 class="font-title text-5xl lg:text-6xl mb-10 lg:mb-20 text-black font-semibold leading-tight tracking-wide">How it works</h1>
                 </div>
                 <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8 h-12"><img src="/images/read.svg"></div>
                     <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Read some reviews</h3>
-                    <p class="text-black text-xl w-full lg:w-4/5">Browse our reviews for companies that interest you. You can upvote reviews that you find helpful.</p>
+                    <p class="text-black text-xl w-full lg:w-4/5">Browse our reviews for companies that interest you. You might even find stories about your employer.</p>
                 </div>
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8 h-12"><img src="/images/write.svg"></div>
@@ -48,7 +48,7 @@
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
                     <div class="mb-4 lg:mb-8 h-12"><img src="/images/review.png"></div>
                     <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Spread the word</h3>
-                    <p class="text-black text-xl w-full lg:w-4/5">Ask your friends to write a review. This is anti-racism in action, but it takes all of us.</p>
+                    <p class="text-black text-xl w-full lg:w-4/5">Ask your friends to review their companies. This is anti-racism in action, and there’s power in numbers.</p>
                 </div>
             </div>
          </div>
@@ -60,7 +60,8 @@
                 Amplify your voice
             </x-slot>
             <x-slot name="body">
-                <p class="mb-12">Lack of representation? A racial pay gap? A glass ceiling? We haven’t heard it all until we’ve heard from you.</p>
+                <p class="mb-12">Does your company have a glass ceiling? Or are they so inclusive that other companies should study them?</p>
+                <p class="mb-12">Whether your employer is good, bad, or somewhere in between, we want to hear about it.</p>
             </x-slot>
         </x-lr--layout>
         
