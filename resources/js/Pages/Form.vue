@@ -357,6 +357,12 @@ import Button from '../Jetstream/Button.vue'
                
             }
         },
+        watch: {
+            step: function () {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0;
+            }
+        },
         computed: {
             // parentQuestions: function() {
             //   return _.pickBy(this.questions[0].questions, function(q) {

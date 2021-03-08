@@ -28,7 +28,7 @@
          <div class="relative bg-white flex flex-col w-full" >
             <div class="container relative mx-auto flex-row flex-wrap flex h-full items-center ">
                 <div class="w-full py-10">
-                    CONTENT
+                    <!-- Termly Tracking Code --> <div name="termly-embed" data-id="a371d915-6d2f-4269-9cd1-f8dbbeb5ac8a" data-type="iframe"></div> <script type="text/javascript">(function(d, s, id) { var js, tjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://app.termly.io/embed-policy.min.js"; tjs.parentNode.insertBefore(js, tjs); }(document, 'script', 'termly-jssdk'));</script>
                 </div>
             </div>
          </div>

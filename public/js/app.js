@@ -4023,6 +4023,13 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
+  watch: {
+    step: function step() {
+      document.body.scrollTop = 0; // For Safari
+
+      document.documentElement.scrollTop = 0;
+    }
+  },
   computed: {// parentQuestions: function() {
     //   return _.pickBy(this.questions[0].questions, function(q) {
     //     return !q.parent_id;
