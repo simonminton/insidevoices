@@ -25,7 +25,7 @@
                 <div class="w-full lg:w-1/2">
                     <h1 class="font-title text-5xl md:text-6xl mb-12 text-white font-semibold leading-tight tracking-wide">Share your story</h1>
                     <p class="text-white text-xl w-full md:w-2/3 mb-12">We want to know how your company performs when it comes to diversity, equity and inclusion. Whether you’re a person of color or an ally, anonymously review your employer so we can see how they measure up against others.</p>
-                    <a href="/your-story" class="rounded-md inline-flex bg-light-green px-5 py-4 text-dark-grey font-bold text-lg md:text-xl">Share Your Story</a>
+                    <a href="/your-story" class="rounded-md inline-flex bg-light-green px-5 py-4 text-dark-grey font-bold text-lg md:text-xl">Share Now</a>
                 </div>
             </div>
          </div>
