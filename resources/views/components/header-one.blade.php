@@ -6,6 +6,6 @@
     </div>
     <div class="w-full md:w-2/3 lg:w-1/2 relative  pt-12 md:pt-0">
         <img class="w-full top-0 -mb-16 md:pl-24 relative z-40" src="{{ $image }}" />
-        <img src="/images/logo-overlay.svg" class="absolute z-50 top-10 right-14">
+
     </div>
 </div>

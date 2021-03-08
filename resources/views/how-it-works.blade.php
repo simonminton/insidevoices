@@ -36,17 +36,17 @@
                     <h1 class="font-title text-5xl lg:text-6xl mb-10 lg:mb-20 text-black font-semibold leading-tight tracking-wide">How it Works</h1>
                 </div>
                 <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
-                    <div class="mb-4 lg:mb-8"><img src="/images/read.svg"></div>
+                    <div class="mb-4 lg:mb-8 h-12"><img src="/images/read.svg"></div>
                     <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Read some reviews</h3>
                     <p class="text-black text-xl w-full lg:w-4/5">Browse our reviews for companies that interest you. You can upvote reviews that you find helpful.</p>
                 </div>
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
-                    <div class="mb-4 lg:mb-8"><img src="/images/write.svg"></div>
+                    <div class="mb-4 lg:mb-8 h-12"><img src="/images/write.svg"></div>
                     <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Share your story</h3>
                     <p class="text-black text-xl w-full lg:w-4/5">Review your company by answering 6 multiple-choice questions. After each one, add detail to tell us what’s driving your answers.</p>
                 </div>
                  <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
-                    <div class="mb-4 lg:mb-8"><img src="/images/review.svg"></div>
+                    <div class="mb-4 lg:mb-8 h-12"><img src="/images/review.png"></div>
                     <h3 class="font-title font-bold mb-4 lg:mb-8 text-2xl lg:text-3xl">Spread the word</h3>
                     <p class="text-black text-xl w-full lg:w-4/5">Ask your friends to write a review. This is anti-racism in action, but it takes all of us.</p>
                 </div>
