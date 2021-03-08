@@ -3968,6 +3968,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3984,6 +3990,7 @@ __webpack_require__.r(__webpack_exports__);
       current_question: "company",
       steps: 15,
       step: 1,
+      skippable: 0,
       response: {
         company: "",
         location: "",
@@ -4029,10 +4036,13 @@ __webpack_require__.r(__webpack_exports__);
       this.$forceUpdate();
       axios.post('/your-story', this.response).then(function (response) {
         console.log(response.data);
-        _this.step = 17;
+        _this.step = 18;
       })["catch"](function (error) {
         console.log(error.response);
       });
+    },
+    skipQuestion: function skipQuestion() {
+      if (step == 2) {}
     }
   }
 });
@@ -27054,7 +27064,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("public-app-layout", [
     _c("div", [
-      _vm.step < 16
+      _vm.step < 17
         ? _c(
             "div",
             {
@@ -27211,6 +27221,14 @@ var render = function() {
                                       ? _c("span", [
                                           _vm._v(
                                             "Finally, tell us a little bit about yourself."
+                                          )
+                                        ])
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _vm.step == 16
+                                      ? _c("span", [
+                                          _vm._v(
+                                            "Anything else you want to share?"
                                           )
                                         ])
                                       : _vm._e()
@@ -28322,6 +28340,80 @@ var render = function() {
                                         }
                                       }
                                     })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 16
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.response.extra,
+                                          expression: "response.extra"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: { rows: "4", placeholder: "" },
+                                      domProps: { value: _vm.response.extra },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.response,
+                                            "extra",
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 16
+                                  ? _c(
+                                      "label",
+                                      {
+                                        staticClass:
+                                          "w-full text-white text-xl my-4 block",
+                                        attrs: { for: "" }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Before you go, do you have any feedback? We're constantly improving and would love to hear your thoughts."
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.step == 16
+                                  ? _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.response.feedback,
+                                          expression: "response.feedback"
+                                        }
+                                      ],
+                                      staticClass: "w-full flex rounded-md p-4",
+                                      attrs: { rows: "4", placeholder: "" },
+                                      domProps: {
+                                        value: _vm.response.feedback
+                                      },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.response,
+                                            "feedback",
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    })
                                   : _vm._e()
                               ]
                             ),
@@ -28411,19 +28503,28 @@ var render = function() {
                                                   "w-1/2 text-light-green text-right"
                                               },
                                               [
-                                                _c(
-                                                  "span",
-                                                  {
-                                                    staticClass:
-                                                      "cursor-pointer",
-                                                    on: {
-                                                      click: function($event) {
-                                                        _vm.step = _vm.step + 1
-                                                      }
-                                                    }
-                                                  },
-                                                  [_vm._v("Skip")]
-                                                )
+                                                _vm.step == 3 ||
+                                                _vm.step == 5 ||
+                                                _vm.step == 7 ||
+                                                _vm.step == 9 ||
+                                                _vm.step == 11 ||
+                                                _vm.step == 13
+                                                  ? _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "cursor-pointer",
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            return _vm.skipQuestion()
+                                                          }
+                                                        }
+                                                      },
+                                                      [_vm._v("Skip")]
+                                                    )
+                                                  : _vm._e()
                                               ]
                                             )
                                           ]
@@ -28446,7 +28547,7 @@ var render = function() {
                                           "flex flex-col justify-end select-none "
                                       },
                                       [
-                                        _vm.step <= 15
+                                        _vm.step <= 16
                                           ? _c(
                                               "div",
                                               {
@@ -28484,7 +28585,7 @@ var render = function() {
           )
         : _vm._e(),
       _vm._v(" "),
-      _vm.step == 16
+      _vm.step == 17
         ? _c("div", [
             _c("div", { staticClass: "bg-green" }, [
               _c(
@@ -29013,7 +29114,7 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _vm.step == 17
+      _vm.step == 18
         ? _c("div", [
             _c(
               "div",
@@ -44494,14 +44595,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./resources/js/Pages/Form.vue ***!
   \*************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_vue_vue_type_template_id_b8cafc26___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form.vue?vue&type=template&id=b8cafc26& */ "./resources/js/Pages/Form.vue?vue&type=template&id=b8cafc26&");
 /* harmony import */ var _Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Form.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Form.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -44531,7 +44633,7 @@ component.options.__file = "resources/js/Pages/Form.vue"
 /*!**************************************************************!*\
   !*** ./resources/js/Pages/Form.vue?vue&type=script&lang=js& ***!
   \**************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

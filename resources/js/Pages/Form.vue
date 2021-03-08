@@ -1,7 +1,7 @@
 <template>
     <public-app-layout>
         <div>
-            <div v-if="step < 16" class="py-24 bg-top bg-cover min-h-screen"  style="background-image: url('/images/ivbga.jpg')">
+            <div v-if="step < 17" class="py-24 bg-top bg-cover min-h-screen"  style="background-image: url('/images/ivbga.jpg')">
                 <div class="container w-full mx-auto flex flex-row flex-wrap">
                     <div class="w-full lg:w-3/5 sm:px-6 lg:px-8" >
                         <form @submit.prevent="submit"  enctype="multipart/form-data">
@@ -31,6 +31,7 @@
                                     <span v-if="step == 13">{{response.question6 }}</span>
                                     <span v-if="step >= 4 && step%2 != 1 && step <= 14">What makes you say that?</span>
                                     <span v-if="step == 15">Finally, tell us a little bit about yourself.</span>
+                                    <span v-if="step == 16">Anything else you want to share?</span>
                                 </h2>
                                 <h4 class="text-white text-xl mt-8" v-if="step == 1">
                                 Thanks for deciding to write an anonymous review. By telling us what you’ve witnessed and experienced, you can help other people figure out if your employer is right for them.
@@ -126,6 +127,11 @@
                                 <textarea v-if="step == 10" v-model="response.story4" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
                                 <textarea v-if="step == 12" v-model="response.story5" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
                                 <textarea v-if="step == 14" v-model="response.story6" class="w-full flex rounded-md p-4" rows="8" placeholder="Try to tell us why you chose that answer."></textarea>
+                                
+                                <textarea v-if="step == 16" v-model="response.extra" class="w-full flex rounded-md p-4" rows="4" placeholder=""></textarea>
+                                <label v-if="step == 16" class="w-full text-white text-xl my-4 block" for="">Before you go, do you have any feedback? We're constantly improving and would love to hear your thoughts.</label>
+                                <textarea v-if="step == 16" v-model="response.feedback" class="w-full flex rounded-md p-4" rows="4" placeholder=""></textarea>
+                                
                                 </div>
                                 <div class="w-full flex flex-row flex-wrap mt-10">
                                     <div class="w-1/2">
@@ -139,14 +145,14 @@
                                                     <span v-if="step > 1" class="cursor-pointer" @click="step = step-1">&larr; Back</span>
                                                 </div>
                                                 <div class="w-1/2 text-light-green text-right">
-                                                    <span class="cursor-pointer" @click="skipQuestion()">Skip</span>
+                                                    <span v-if="step == 3 || step == 5 || step == 7 || step == 9 || step == 11 || step == 13" class="cursor-pointer" @click="skipQuestion()">Skip</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-1/2 flex flex-row justify-end">
                                         <div class="flex flex-col justify-end select-none ">
-                                            <div @click="step = step+1" v-if="step <= 15" class="cursor-pointer flex px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md">Continue</div>    
+                                            <div @click="step = step+1" v-if="step <= 16" class="cursor-pointer flex px-6 py-2 font-bold text-xl text-black bg-light-green rounded-md">Continue</div>    
                                         </div>
                                     </div>
 
@@ -160,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="step==16">
+            <div v-if="step==17">
                 <div class="bg-green">
                     <div class="container mx-auto flex-row flex-wrap flex pt-4 px-8 md:px-0">
                         <div class="w-full h-full items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12 pb-4 md:pb-12 xl:pb-32">
@@ -281,7 +287,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="step == 17">
+            <div v-if="step == 18">
                 <div class="relative bg-black flex flex-col w-full h-96 bg-cover bg-right" style="background-image: url('/images/how-it-works-bg.jpg')">
                     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black"></div>
                     <x-navigation></x-navigation>
@@ -366,12 +372,14 @@ import Button from '../Jetstream/Button.vue'
                  axios.post('/your-story', this.response)
                 .then(response => {
                     console.log(response.data);
-                    this.step = 17;
+                    this.step = 18;
                 }).catch(error => { console.log(error.response) });
                  
             },
             skipQuestion() {
-                if(step == )
+                if(step == 2) {
+
+                }
             }
         }
     }
