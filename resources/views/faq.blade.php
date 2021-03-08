@@ -21,7 +21,7 @@
             <x-plain-header>
                 <x-slot name="title">Frequently Asked Questions</x-slot>
                 <x-slot name="body">
-                    <p class="text-white text-lg md:text-xl">If you have any further questions please reach out to us<p></x-slot>
+                    <p class="text-white text-lg md:text-xl">Have a question you don’t see below? Drop us an <a href="mailto:support@insidevoices.io">email</a>.<p></x-slot>
             </x-plain-header>
         </div>
 
@@ -80,7 +80,7 @@
                             <x-qa>
                                 <x-slot name="question">How long do reviews stay up on the site?</x-slot>
                                 <x-slot name="answer">
-                                    <p>Reviews will sunset after <strong>6 months</strong>. We believe that companies should be judged on what they’re doing now, rather than what they were doing a while ago. We think 6 months is a reasonable amount of time for companies to get their acts together.</p>
+                                    <p>Reviews will sunset after <strong>2 years</strong>. We believe that companies should be judged on what they’re doing now, rather than what they were doing a while ago. We think 2 years is more than enough time for a company to get its act together.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
@@ -95,33 +95,33 @@
                         <x-slot name="title">Who should write a review?</x-slot>
                         <x-slot name="body">
                             <x-qa>
-                                <x-slot name="question">I’m not a person of color, should I write a review?</x-slot>
+                                <x-slot name="question">I’m not a person of color; should I write a review?</x-slot>
                                 <x-slot name="answer">
                                     <p><strong>Yes</strong>, please. If you’ve been paying attention to the way your company performs on diversity, equity and inclusion, we want to hear from you. White people are often in a position to witness behavior that people of color are not, so we encourage you to share what you know, as an act of allyship.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
-                                <x-slot name="question">I don’t see my employer in the list of companies. Should I write a review?</x-slot>
+                                <x-slot name="question">I don’t see my employer in the list of companies; should I write a review?</x-slot>
                                 <x-slot name="answer">
                                     <p><strong>Yes</strong>, please. If your company isn’t in the list, then it doesn’t have any reviews yet. Writing a review for your company will add it to our list.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
-                                <x-slot name="question">My company already has reviews. Should I write one?</x-slot>
+                                <x-slot name="question">My company already has reviews; should I write a review?</x-slot>
                                 <x-slot name="answer">
                                     <p><strong>Yes</strong>, please. The more reviews the better. It can be difficult to tell whether a review is representative of the culture of a company or just one person’s experience. Multiple reviews help to paint a broader picture of the company’s culture and allow users to identify trends and common themes.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
-                                <x-slot name="question">There are barely any people of color at my company. Should I write a review?</x-slot>
+                                <x-slot name="question">There are few people of color at my company; should I write a review?</x-slot>
                                 <x-slot name="answer">
                                     <p><strong>Yes</strong>, and highlight the lack of diversity in your review. It may be clear to you that your company has very few people of color, but that may not be obvious from the outside. Your review could shine a light on the lack of diversity. When writing your review, feel free to skip questions that you don’t think apply.</p>
                                 </x-slot>
                             </x-qa>
                             <x-qa>
-                                <x-slot name="question">I’ve just joined my company. Should I write a review?</x-slot>
+                                <x-slot name="question">I recently joined my company; should I write a review?</x-slot>
                                 <x-slot name="answer">
-                                    <p><strong>No</strong>, not yet. We ask that you wait to write a review until you’ve been at a company for at least 6 months. However, feel free to write a review for your previous employer, if you worked there within the last 6 months.</p>
+                                    <p><strong>No</strong>, probably not. We think you should wait to write a review until you’ve been at a company for at least 6 months. However, feel free to write a review for your previous employer, if you worked there within the last 6 months.</p>
                                 </x-slot>
                             </x-qa>
                         </x-slot>
