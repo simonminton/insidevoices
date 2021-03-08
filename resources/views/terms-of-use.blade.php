@@ -21,14 +21,23 @@
             <x-plain-header>
                 <x-slot name="title">Terms & Conditions</x-slot>
                 <x-slot name="body">
-                    <p class="text-white text-lg md:text-xl">Updated: February 24, 2020<p>
+                    <p class="text-white text-lg md:text-xl">Updated: February 14, 2021<p>
                 </x-slot>
             </x-plain-header>
         </div>
          <div class="relative bg-white flex flex-col w-full" >
             <div class="container relative mx-auto flex-row flex-wrap flex h-full items-center ">
                 <div class="w-full py-10">
-                    CONTENT
+                    <!-- Termly Tracking Code -->
+
+<div name="termly-embed" data-id="f8c1991f-d542-47b0-9e00-ce1b52690c26" data-type="iframe"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, tjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://app.termly.io/embed-policy.min.js";
+  tjs.parentNode.insertBefore(js, tjs);
+}(document, 'script', 'termly-jssdk'));</script>
                 </div>
             </div>
          </div>

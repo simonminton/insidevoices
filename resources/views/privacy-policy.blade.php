@@ -21,7 +21,7 @@
             <x-plain-header>
                 <x-slot name="title">Privacy Policy</x-slot>
                 <x-slot name="body">
-                    <p class="text-white text-lg md:text-xl">Updated: February 24, 2020<p>
+                    <p class="text-white text-lg md:text-xl">Updated: February 13, 2021<p>
                 </x-slot>
             </x-plain-header>
         </div>
