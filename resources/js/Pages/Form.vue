@@ -139,7 +139,7 @@
                                                     <span v-if="step > 1" class="cursor-pointer" @click="step = step-1">&larr; Back</span>
                                                 </div>
                                                 <div class="w-1/2 text-light-green text-right">
-                                                    <span class="cursor-pointer" @click="step = step+1">Skip</span>
+                                                    <span class="cursor-pointer" @click="skipQuestion()">Skip</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -316,6 +316,7 @@ import Button from '../Jetstream/Button.vue'
                 current_question: "company",
                 steps: 15,
                 step: 1,
+                skippable: 0,
                 response: {
                     company: "",
                     location: "",
@@ -368,6 +369,9 @@ import Button from '../Jetstream/Button.vue'
                     this.step = 17;
                 }).catch(error => { console.log(error.response) });
                  
+            },
+            skipQuestion() {
+                if(step == )
             }
         }
     }
