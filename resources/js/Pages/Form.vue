@@ -20,7 +20,7 @@
                                 </h4>
                                 
 
-                                <h2 class="text-5xl font-bold font-title leading-none text-white mb-10">
+                                <h2 class="text-3xl font-bold font-title leading-none text-white mb-10">
                                     <span v-if="step == 1">Well done for taking <span class="pinkUnderline">action!</span></span>
                                     <span v-if="step == 2">Tell us a little bit about your company.</span>
                                     <span v-if="step == 3">{{response.question1 }}</span>

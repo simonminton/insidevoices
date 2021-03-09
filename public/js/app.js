@@ -27158,7 +27158,7 @@ var render = function() {
                                   "h2",
                                   {
                                     staticClass:
-                                      "text-5xl font-bold font-title leading-none text-white mb-10"
+                                      "text-3xl font-bold font-title leading-none text-white mb-10"
                                   },
                                   [
                                     _vm.step == 1
