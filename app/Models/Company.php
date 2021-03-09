@@ -11,9 +11,9 @@ class Company extends Model
 {
     use HasFactory, SoftDeletes, UsesUuid;
 
-    public function respondents()
+    public function responses()
 	{
-	    return $this->hasMany(Respondent::class);
+	    return $this->hasMany(Response::class);
 	}
 	public function industry()
 	{

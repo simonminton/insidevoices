@@ -11,13 +11,10 @@ class Response extends Model
 {
     use HasFactory, SoftDeletes, UsesUuid;
 
-    public function questions()
+    public function company()
 	{
-	    return $this->belongsTo(Question::class);
+	    return $this->belongsTo(Company::class);
 	}
 
-	public function respondent()
-	{
-	    return $this->belongsTo(Respondent::class);
-	}
+
 }
