@@ -8,6 +8,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\File;
 
 class Company extends Resource
 {
@@ -48,6 +49,7 @@ class Company extends Resource
             BelongsTo::make('Industry')->nullable(),
             Textarea::make('Description'),
             Text::make('Url'),
+            File::make('Logo')->disk('public'),
             
         ];
     }
