@@ -6,7 +6,7 @@
                     <div class="w-full lg:w-3/5 sm:px-6 lg:px-8" >
                         <form @submit.prevent="submit"  enctype="multipart/form-data">
                             <div class="lg:pr-12">
-                                <div style="min-height: 30rem">
+                                <div style="min-height: 24rem">
                                 <h3 class="pinkUnderline text-white text-xl inline-block mb-8 ">
                                 <span v-if="step == 3 || step == 4">Representation</span>
                                     <span v-if="step == 5 || step == 6">Diversity</span>

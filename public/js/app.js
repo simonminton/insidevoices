@@ -27105,7 +27105,7 @@ var render = function() {
                           _c("div", { staticClass: "lg:pr-12" }, [
                             _c(
                               "div",
-                              { staticStyle: { "min-height": "30rem" } },
+                              { staticStyle: { "min-height": "24rem" } },
                               [
                                 _c(
                                   "h3",
