@@ -3514,6 +3514,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -26743,14 +26744,28 @@ var render = function() {
                         },
                         [
                           _c("div", { staticClass: "w-1/3 pb-16" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "flex w-20 h-20 justify-center items-center text-white bg-black"
-                              },
-                              [_vm._v("LOGO")]
-                            )
+                            !company.logo
+                              ? _c("div", {
+                                  staticClass:
+                                    "flex w-20 h-20 justify-center items-center text-white bg-black"
+                                })
+                              : _vm._e(),
+                            _vm._v(" "),
+                            company.logo
+                              ? _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "flex w-20 h-20 justify-center items-center text-white"
+                                  },
+                                  [
+                                    _c("img", {
+                                      staticClass: "w-full ",
+                                      attrs: { src: company.logo }
+                                    })
+                                  ]
+                                )
+                              : _vm._e()
                           ]),
                           _vm._v(" "),
                           _c("div", { staticClass: "w-2/3" }, [
