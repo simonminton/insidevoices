@@ -44,7 +44,7 @@ class Response extends Resource
     {
         return [
             
-            Text::make('Company')->sortable(),
+            Text::make('Company Name')->sortable(),
             BelongsTo::make('Company')->nullable(),
             Text::make('Location'),
             Text::make('response1'),
