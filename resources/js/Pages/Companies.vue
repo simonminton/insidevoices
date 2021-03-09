@@ -25,7 +25,7 @@
                                 <inertia-link class="bg-white p-6 w-full flex flex-row flex-wrap shadow-md rounded-md" :href="'/companies/'+company.id">
                                     <div class="w-1/3 pb-16">
                                         <div v-if="!company.logo" class="flex w-20 h-20 justify-center items-center text-white bg-black"></div>
-                                        <div v-if="company.logo" class="flex w-20 h-20 justify-center items-center text-white"><img :src="company.logo" class="w-full " /></div>
+                                        <div v-if="company.logo" class="flex w-20 h-20 justify-center items-center text-white"><img :src="'/storage/'+company.logo" class="w-full " /></div>
                                     </div>
                                     <div class="w-2/3">
                                         <h4 class="text-3xl pl-4 font-bold font-title">{{ company.name }}</h4>

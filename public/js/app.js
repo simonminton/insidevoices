@@ -26761,7 +26761,7 @@ var render = function() {
                                   [
                                     _c("img", {
                                       staticClass: "w-full ",
-                                      attrs: { src: company.logo }
+                                      attrs: { src: "/storage/" + company.logo }
                                     })
                                   ]
                                 )
