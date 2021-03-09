@@ -48,7 +48,7 @@ class Response extends Resource
             Text::make('Company Name','company')->sortable(),
             BelongsTo::make('Company')->nullable(),
             Text::make('Location'),
-            Select::make('story1')->options([
+            Select::make('response1')->options([
                 '0' => 'Skipped',
                 '1' => 'Strongly disagree',
                 '2' => 'Disagree',
@@ -57,7 +57,7 @@ class Response extends Resource
                 '5' => 'Strongly agree',
             ])->displayUsingLabels(),
             Textarea::make('story1'),
-            Select::make('story2')->options([
+            Select::make('response2')->options([
                 '0' => 'Skipped',
                 '1' => 'Strongly disagree',
                 '2' => 'Disagree',
