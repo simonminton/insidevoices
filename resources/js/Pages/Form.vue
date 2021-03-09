@@ -46,7 +46,7 @@
                                     <label class="w-full text-white text-xl mb-4 block" for="role">What is your role/job title?</label>
                                     <input class="w-full text-2xl px-4 py-4 rounded-lg mb-4 block" type="text" v-model="response.role"></input>
                                     <label class="w-full text-white text-xl mb-4 block" for="role">How long have you worked at your company?</label>
-                                    <select v-model="response.timeAtCompany" class="text-2xl rounded-lg w-full flex px-4 py-4">
+                                    <select v-model="response.timeAtCompany" class="text-2xl rounded-lg w-full flex px-4 py-4 mb-4">
                                         <option value="0">Select your Answer</option>
                                         <option value="1">0 to 6 months</option>
                                         <option value="2">7 to 11 months</option>

@@ -27412,7 +27412,7 @@ var render = function() {
                                             }
                                           ],
                                           staticClass:
-                                            "text-2xl rounded-lg w-full flex px-4 py-4",
+                                            "text-2xl rounded-lg w-full flex px-4 py-4 mb-4",
                                           on: {
                                             change: function($event) {
                                               var $$selectedVal = Array.prototype.filter
