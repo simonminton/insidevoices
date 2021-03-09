@@ -1,7 +1,7 @@
 <template>
     <public-app-layout>
         <div>
-            <div v-if="step < 17" class="py-24 bg-top bg-cover min-h-screen"  style="background-image: url('/images/ivbga.jpg')">
+            <div v-if="step < 17" class="py-12 bg-top bg-cover min-h-screen"  style="background-image: url('/images/ivbga.jpg')">
                 <div class="container w-full mx-auto flex flex-row flex-wrap">
                     <div class="w-full lg:w-3/5 sm:px-6 lg:px-8" >
                         <form @submit.prevent="submit"  enctype="multipart/form-data">
