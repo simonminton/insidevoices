@@ -30,8 +30,7 @@
                                     <div class="w-2/3">
                                         <h4 class="text-3xl pl-4 font-bold font-title">{{ company.name }}</h4>
                                     </div>
-                                    <div class="flex-1 text-lg">
-                                        {{ company.description }}
+                                    <div class="flex-1 text-lg" v-html="company.description">
                                     </div>
                                     <div class="text-light-green text-3xl leading-none">
                                         &rarr;

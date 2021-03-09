@@ -3514,7 +3514,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -26780,13 +26779,10 @@ var render = function() {
                             )
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "flex-1 text-lg" }, [
-                            _vm._v(
-                              "\n                                    " +
-                                _vm._s(company.description) +
-                                "\n                                "
-                            )
-                          ]),
+                          _c("div", {
+                            staticClass: "flex-1 text-lg",
+                            domProps: { innerHTML: _vm._s(company.description) }
+                          }),
                           _vm._v(" "),
                           _c(
                             "div",
