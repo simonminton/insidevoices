@@ -3650,6 +3650,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -27020,393 +27028,459 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("div", [
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                  [
+              _vm.company.responses.length == 0
+                ? _c("div", [
                     _c(
                       "div",
                       {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
                       },
                       [
                         _c(
-                          "h4",
+                          "div",
                           {
                             staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                           },
                           [
-                            _vm._v(
-                              "People of color are well-represented in my company’s leadership."
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "We've not received any responses for this company yet."
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.company.responses.length != 0
+                ? _c("div", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                          },
+                          [
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "People of color are well-represented in my company’s leadership."
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q1))]
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q1))]
-                        )
-                      ]
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                        " +
+                                  _vm._s(response.story1) +
+                                  "\n                        "
+                              )
+                            ]
+                          )
+                        })
+                      ],
+                      2
                     ),
                     _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(response.story1) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap " },
-                  [
                     _c(
                       "div",
                       {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4"
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap "
                       },
                       [
                         _c(
-                          "h4",
+                          "div",
                           {
                             staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
-                          },
-                          [_vm._v("My company is racially diverse.")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q2))]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(response.story2) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                      },
-                      [
-                        _c(
-                          "h4",
-                          {
-                            staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4"
                           },
                           [
-                            _vm._v(
-                              "In my opinion, people of color can be themselves at my company."
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [_vm._v("My company is racially diverse.")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q2))]
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q3))]
-                        )
-                      ]
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(response.story2) +
+                                  "\n                        "
+                              )
+                            ]
+                          )
+                        })
+                      ],
+                      2
                     ),
                     _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(response.story3) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                  [
                     _c(
                       "div",
                       {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
                       },
                       [
                         _c(
-                          "h4",
+                          "div",
                           {
                             staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                           },
                           [
-                            _vm._v(
-                              "Race has an impact on performance reviews or compensation at my company."
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "In my opinion, people of color can be themselves at my company."
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q3))]
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q4))]
-                        )
-                      ]
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(response.story3) +
+                                  "\n                        "
+                              )
+                            ]
+                          )
+                        })
+                      ],
+                      2
                     ),
                     _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(response.story4) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                  [
                     _c(
                       "div",
                       {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
                       },
                       [
                         _c(
-                          "h4",
+                          "div",
                           {
                             staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                           },
                           [
-                            _vm._v(
-                              "My company’s leadership cares about issues that specifically affect people of color."
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "Race has an impact on performance reviews or compensation at my company."
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q4))]
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q5))]
-                        )
-                      ]
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(response.story4) +
+                                  "\n                        "
+                              )
+                            ]
+                          )
+                        })
+                      ],
+                      2
                     ),
                     _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(response.story5) +
-                              "\n                        "
-                          )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                  [
                     _c(
                       "div",
                       {
-                        staticClass:
-                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
                       },
                       [
                         _c(
-                          "h4",
+                          "div",
                           {
                             staticClass:
-                              "w-full text-black font-bold text-4xl font-title"
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                           },
                           [
-                            _vm._v(
-                              "People of color receive equal treatment at my company."
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "My company’s leadership cares about issues that specifically affect people of color."
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q5))]
                             )
                           ]
                         ),
                         _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-3xl font-title"
-                          },
-                          [_vm._v("Most common answer")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "h5",
-                          {
-                            staticClass:
-                              "w-full text-black font-semibold text-2xl font-title"
-                          },
-                          [_vm._v(_vm._s(_vm.company.common_response.q6))]
-                        )
-                      ]
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(response.story5) +
+                                  "\n                        "
+                              )
+                            ]
+                          )
+                        })
+                      ],
+                      2
                     ),
                     _vm._v(" "),
-                    _vm._l(_vm.company.responses, function(response, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: response.id,
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                        },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(response.story6) +
-                              "\n                        "
+                    _c(
+                      "div",
+                      {
+                        staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap"
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                          },
+                          [
+                            _c(
+                              "h4",
+                              {
+                                staticClass:
+                                  "w-full text-black font-bold text-4xl font-title"
+                              },
+                              [
+                                _vm._v(
+                                  "People of color receive equal treatment at my company."
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-3xl font-title"
+                              },
+                              [_vm._v("Most common answer")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h5",
+                              {
+                                staticClass:
+                                  "w-full text-black font-semibold text-2xl font-title"
+                              },
+                              [_vm._v(_vm._s(_vm.company.common_response.q6))]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _vm._l(_vm.company.responses, function(
+                          response,
+                          index
+                        ) {
+                          return _c(
+                            "div",
+                            {
+                              key: response.id,
+                              staticClass:
+                                "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                            },
+                            [
+                              _vm._v(
+                                "\n                            " +
+                                  _vm._s(response.story6) +
+                                  "\n                        "
+                              )
+                            ]
                           )
-                        ]
-                      )
-                    })
-                  ],
-                  2
-                )
-              ])
+                        })
+                      ],
+                      2
+                    )
+                  ])
+                : _vm._e()
             ]
           )
         ]

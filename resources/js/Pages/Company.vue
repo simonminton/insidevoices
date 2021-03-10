@@ -23,7 +23,15 @@
                         <a  class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer">Advocacy</a>
                         <a  class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer">Treatment</a>
                     </div>
-                    <div>
+                    <div v-if="company.responses.length == 0">
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">We've not received any responses for this company yet.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="company.responses.length != 0">
+                        
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">People of color are well-represented in my company’s leadership.</h4>
