@@ -15,6 +15,10 @@ class Company extends Model
 	{
 	    return $this->hasMany(Response::class);
 	}
+	public function common_response()
+	{
+	    return $this->hasOne(CommonResponse::class);
+	}
 	public function industry()
 	{
 	    return $this->belongsTo(Industry::class);

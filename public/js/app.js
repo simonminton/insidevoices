@@ -27020,51 +27020,56 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._l(_vm.company.responses, function(response, index) {
-                return _c("div", { key: response.id }, [
-                  _c(
-                    "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                    [
-                      _c(
+              _c("div", [
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question1))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response1)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question1))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response1))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27072,58 +27077,64 @@ var render = function() {
                           _vm._v(
                             "\n                        " +
                               _vm._s(response.story1) +
-                              "\n                    "
+                              "\n                        "
                           )
                         ]
                       )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap "
-                    },
-                    [
-                      _c(
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap " },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question2))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response2)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question2))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response2))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27135,52 +27146,60 @@ var render = function() {
                           )
                         ]
                       )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                    [
-                      _c(
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question3))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response3)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question3))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response3))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27192,52 +27211,60 @@ var render = function() {
                           )
                         ]
                       )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                    [
-                      _c(
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question4))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response4)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question4))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response4))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27249,52 +27276,60 @@ var render = function() {
                           )
                         ]
                       )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                    [
-                      _c(
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question5))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response5)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question5))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response5))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27306,52 +27341,60 @@ var render = function() {
                           )
                         ]
                       )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                    [
-                      _c(
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
+                      },
+                      [
+                        _c(
+                          "h4",
+                          {
+                            staticClass:
+                              "w-full text-black font-bold text-4xl font-title"
+                          },
+                          [_vm._v(_vm._s(_vm.response.question6))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-3xl font-title"
+                          },
+                          [_vm._v("Most common answer")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h5",
+                          {
+                            staticClass:
+                              "w-full text-black font-semibold text-2xl font-title"
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.company.common_response.response6)
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.company.responses, function(response, index) {
+                      return _c(
                         "div",
                         {
-                          staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
-                        },
-                        [
-                          _c(
-                            "h4",
-                            {
-                              staticClass:
-                                "w-full text-black font-bold text-4xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.question6))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-3xl font-title"
-                            },
-                            [_vm._v("Most common answer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "h5",
-                            {
-                              staticClass:
-                                "w-full text-black font-semibold text-2xl font-title"
-                            },
-                            [_vm._v(_vm._s(response.response6))]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
+                          key: response.id,
                           staticClass:
                             "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
                         },
@@ -27363,12 +27406,12 @@ var render = function() {
                           )
                         ]
                       )
-                    ]
-                  )
-                ])
-              })
-            ],
-            2
+                    })
+                  ],
+                  2
+                )
+              ])
+            ]
           )
         ]
       )
