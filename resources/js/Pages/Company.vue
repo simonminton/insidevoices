@@ -25,7 +25,7 @@
                     </div>
                     <div v-for="(response, index) in company.responses" v-bind:key="response.id">
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question1 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response1 }}</h5>

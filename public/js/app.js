@@ -27030,7 +27030,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                         },
                         [
                           _c(
