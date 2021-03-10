@@ -28,7 +28,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question1 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response1 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q1 }}</h5>
                             </div>
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg" v-for="(response, index) in company.responses" v-bind:key="response.id">
                             {{ response.story1 }}
@@ -39,7 +39,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question2 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response2 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q2 }}</h5>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story2 }}
@@ -50,7 +50,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question3 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response3 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q3 }}</h5>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story3 }}
@@ -60,7 +60,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question4 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response4 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q4 }}</h5>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story4 }}
@@ -70,7 +70,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question5 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response5 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q5 }}</h5>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story5 }}
@@ -80,7 +80,7 @@
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question6 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.response6 }}</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q6 }}</h5>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story6 }}

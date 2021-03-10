@@ -27056,11 +27056,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response1)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q1))]
                         )
                       ]
                     ),
@@ -27121,11 +27117,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response2)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q2))]
                         )
                       ]
                     ),
@@ -27186,11 +27178,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response3)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q3))]
                         )
                       ]
                     ),
@@ -27251,11 +27239,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response4)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q4))]
                         )
                       ]
                     ),
@@ -27316,11 +27300,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response5)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q5))]
                         )
                       ]
                     ),
@@ -27381,11 +27361,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-semibold text-2xl font-title"
                           },
-                          [
-                            _vm._v(
-                              _vm._s(_vm.company.common_response.response6)
-                            )
-                          ]
+                          [_vm._v(_vm._s(_vm.company.common_response.q6))]
                         )
                       ]
                     ),
