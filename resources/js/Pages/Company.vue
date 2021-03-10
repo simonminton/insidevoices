@@ -34,8 +34,8 @@
                         <div class="w-4/5 p-8 pb-12 flex flex-row flex-wrap">
                             {{ response.story1 }}
                         </div>
-                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap mb-4">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap ">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question2 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response2 }}</h5>
@@ -46,7 +46,7 @@
                         </div>
                         
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question3 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response3 }}</h5>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question4 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response4 }}</h5>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question5 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response5 }}</h5>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question6 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response6 }}</h5>

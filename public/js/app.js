@@ -27078,15 +27078,14 @@ var render = function() {
                   _c(
                     "div",
                     {
-                      staticClass:
-                        "w-4/5 pl-8 pb-12 flex flex-row flex-wrap mb-4"
+                      staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap "
                     },
                     [
                       _c(
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4"
                         },
                         [
                           _c(
@@ -27143,7 +27142,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                         },
                         [
                           _c(
@@ -27200,7 +27199,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                         },
                         [
                           _c(
@@ -27257,7 +27256,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                         },
                         [
                           _c(
@@ -27314,7 +27313,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4"
                         },
                         [
                           _c(
