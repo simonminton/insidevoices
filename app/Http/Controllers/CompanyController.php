@@ -55,8 +55,7 @@ class CompanyController extends Controller
      */
     public function show(Company $company)
     {
-       $company = Company::where('id',$company->id)->with('industry')->first();
-        
+       $company = Company::where('id',$company->id)->with('industry')->with('responses')->first();
         return Inertia::render('Company',
             [
                 'company' => $company,
