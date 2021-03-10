@@ -103,6 +103,7 @@ class Response extends Resource
                 '5' => 'Strongly agree',
             ])->displayUsingLabels(),
             Textarea::make('story6'),
+            Boolean::make('approved'),
             
         ];
     }
