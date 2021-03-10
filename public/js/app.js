@@ -27065,7 +27065,10 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "w-4/5 p-8 pb-12 flex flex-row flex-wrap" },
+                    {
+                      staticClass:
+                        "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                    },
                     [
                       _vm._v(
                         "\n                        " +
