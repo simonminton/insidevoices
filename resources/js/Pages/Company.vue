@@ -23,11 +23,48 @@
                         <a  class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer">Advocacy</a>
                         <a  class="bg-white text-dark-grey w-full text-lg flex rounded-md mb-4 py-3 px-6 cursor-pointer">Treatment</a>
                     </div>
-                    <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
-                        <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
-                            <h4 class="w-full text-black font-bold text-4xl font-title">Are people of color well represented in your organization's leadership?</h4>
-                            <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
-                            <h5 class="w-full text-black font-semibold text-2xl font-title">No, I don't think so</h5>
+                    <div v-for="(response, index) in responses">
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question1 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response1 }}</h5>
+                            </div>
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question2 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response2 }}</h5>
+                            </div>
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question3 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response3 }}</h5>
+                            </div>
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question4 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response4 }}</h5>
+                            </div>
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question5 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response5 }}</h5>
+                            </div>
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
+                                <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question6 }}</h4>
+                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
+                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response6 }}</h5>
+                            </div>
                         </div>
                         
                     </div>
@@ -49,6 +86,7 @@
         props: {
             
             company: Object,
+            responses: Array
         },
         data() {
             return {

@@ -3593,13 +3593,51 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     PublicAppLayout: _Layouts_PublicAppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   props: {
-    company: Object
+    company: Object,
+    responses: Array
   },
   data: function data() {
     return {};
@@ -26962,52 +27000,263 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
-                [
+              _vm._l(_vm.responses, function(response, index) {
+                return _c("div", [
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
-                    },
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
                     [
                       _c(
-                        "h4",
+                        "div",
                         {
                           staticClass:
-                            "w-full text-black font-bold text-4xl font-title"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
                         },
                         [
-                          _vm._v(
-                            "Are people of color well represented in your organization's leadership?"
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question1))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response1))]
                           )
                         ]
-                      ),
-                      _vm._v(" "),
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    [
                       _c(
-                        "h5",
+                        "div",
                         {
                           staticClass:
-                            "w-full text-black font-semibold text-3xl font-title"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
                         },
-                        [_vm._v("Most common answer")]
-                      ),
-                      _vm._v(" "),
+                        [
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question2))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response2))]
+                          )
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    [
                       _c(
-                        "h5",
+                        "div",
                         {
                           staticClass:
-                            "w-full text-black font-semibold text-2xl font-title"
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
                         },
-                        [_vm._v("No, I don't think so")]
+                        [
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question3))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response3))]
+                          )
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                        },
+                        [
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question4))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response4))]
+                          )
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                        },
+                        [
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question5))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response5))]
+                          )
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md"
+                        },
+                        [
+                          _c(
+                            "h4",
+                            {
+                              staticClass:
+                                "w-full text-black font-bold text-4xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.question6))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-3xl font-title"
+                            },
+                            [_vm._v("Most common answer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "w-full text-black font-semibold text-2xl font-title"
+                            },
+                            [_vm._v(_vm._s(response.response6))]
+                          )
+                        ]
                       )
                     ]
                   )
-                ]
-              )
-            ]
+                ])
+              })
+            ],
+            2
           )
         ]
       )
