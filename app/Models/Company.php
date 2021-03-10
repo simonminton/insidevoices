@@ -13,7 +13,7 @@ class Company extends Model
 
     public function responses()
 	{
-	    return $this->hasMany(Response::class);
+	    return $this->hasMany(Response::class)->where('approved',true);
 	}
 	public function common_response()
 	{
