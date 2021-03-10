@@ -27000,8 +27000,8 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._l(_vm.responses, function(response, index) {
-                return _c("div", [
+              _vm._l(_vm.company.responses, function(response, index) {
+                return _c("div", { key: response.id }, [
                   _c(
                     "div",
                     { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
