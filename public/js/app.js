@@ -3649,6 +3649,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -27059,21 +27060,21 @@ var render = function() {
                             [_vm._v(_vm._s(response.response1))]
                           )
                         ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
-                    },
-                    [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(response.story1) +
-                          "\n                    "
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(response.story1) +
+                              "\n                    "
+                          )
+                        ]
                       )
                     ]
                   ),
