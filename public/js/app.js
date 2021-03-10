@@ -27038,7 +27038,11 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question1))]
+                          [
+                            _vm._v(
+                              "People of color are well-represented in my company’s leadership."
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -27099,7 +27103,7 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question2))]
+                          [_vm._v("My company is racially diverse.")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -27160,7 +27164,11 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question3))]
+                          [
+                            _vm._v(
+                              "In my opinion, people of color can be themselves at my company."
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -27221,7 +27229,11 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question4))]
+                          [
+                            _vm._v(
+                              "Race has an impact on performance reviews or compensation at my company."
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -27282,7 +27294,11 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question5))]
+                          [
+                            _vm._v(
+                              "My company’s leadership cares about issues that specifically affect people of color."
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -27343,7 +27359,11 @@ var render = function() {
                             staticClass:
                               "w-full text-black font-bold text-4xl font-title"
                           },
-                          [_vm._v(_vm._s(_vm.response.question6))]
+                          [
+                            _vm._v(
+                              "People of color receive equal treatment at my company."
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
