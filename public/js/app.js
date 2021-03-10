@@ -3630,6 +3630,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -27046,7 +27065,22 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "w-4/5 pl-8 pb-12 flex flex-row flex-wrap" },
+                    { staticClass: "w-4/5 p-8 pb-12 flex flex-row flex-wrap" },
+                    [
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(response.story1) +
+                          "\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "w-4/5 pl-8 pb-12 flex flex-row flex-wrap mb-4"
+                    },
                     [
                       _c(
                         "div",
@@ -27080,6 +27114,21 @@ var render = function() {
                                 "w-full text-black font-semibold text-2xl font-title"
                             },
                             [_vm._v(_vm._s(response.response2))]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(response.story2) +
+                              "\n                        "
                           )
                         ]
                       )
@@ -27124,6 +27173,21 @@ var render = function() {
                             [_vm._v(_vm._s(response.response3))]
                           )
                         ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(response.story3) +
+                              "\n                        "
+                          )
+                        ]
                       )
                     ]
                   ),
@@ -27164,6 +27228,21 @@ var render = function() {
                                 "w-full text-black font-semibold text-2xl font-title"
                             },
                             [_vm._v(_vm._s(response.response4))]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(response.story4) +
+                              "\n                        "
                           )
                         ]
                       )
@@ -27208,6 +27287,21 @@ var render = function() {
                             [_vm._v(_vm._s(response.response5))]
                           )
                         ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(response.story5) +
+                              "\n                        "
+                          )
+                        ]
                       )
                     ]
                   ),
@@ -27248,6 +27342,21 @@ var render = function() {
                                 "w-full text-black font-semibold text-2xl font-title"
                             },
                             [_vm._v(_vm._s(response.response6))]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg"
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(response.story6) +
+                              "\n                        "
                           )
                         ]
                       )

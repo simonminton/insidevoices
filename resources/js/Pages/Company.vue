@@ -31,18 +31,28 @@
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response1 }}</h5>
                             </div>
                         </div>
-                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
+                        <div class="w-4/5 p-8 pb-12 flex flex-row flex-wrap">
+                            {{ response.story1 }}
+                        </div>
+                        <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap mb-4">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question2 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response2 }}</h5>
                             </div>
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
+                                {{ response.story2 }}
+                            </div>
                         </div>
+                        
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question3 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response3 }}</h5>
+                            </div>
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
+                                {{ response.story3 }}
                             </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
@@ -51,6 +61,9 @@
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response4 }}</h5>
                             </div>
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
+                                {{ response.story4 }}
+                            </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
@@ -58,12 +71,18 @@
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response5 }}</h5>
                             </div>
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
+                                {{ response.story5 }}
+                            </div>
                         </div>
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">{{ response.question6 }}</h4>
                                 <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ response.response6 }}</h5>
+                            </div>
+                            <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
+                                {{ response.story6 }}
                             </div>
                         </div>
                         
