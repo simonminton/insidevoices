@@ -26946,7 +26946,10 @@ var render = function() {
                     _vm._v(_vm._s(_vm.company.name) + " "),
                     _c(
                       "span",
-                      { staticClass: "leading-loose text-xl text-white" },
+                      {
+                        staticClass:
+                          " font-sans font-normal tracking-normal leading-loose text-xl text-white"
+                      },
                       [
                         _vm._v(
                           "(" +

@@ -6,7 +6,7 @@
                     <div v-if="!company.logo" class="flex w-32 h-32 justify-center items-center text-white bg-black"></div>
                     <div v-if="company.logo" class="flex w-32 h-32 justify-center items-center text-white"><img :src="'/storage/'+company.logo" class="w-full " /></div>
                     <div class="pl-8">
-                        <h1 class="font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide">{{ company.name }} <span class="leading-loose text-xl text-white">({{ company.responses.length }}) reviews</span></h1>
+                        <h1 class="font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide">{{ company.name }} <span class=" font-sans font-normal tracking-normal leading-loose text-xl text-white">({{ company.responses.length }}) reviews</span></h1>
                         <div class="leading-loose text-xl text-white">
                            {{ company.industry.name }}
                            <br>
