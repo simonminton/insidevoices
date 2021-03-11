@@ -10,15 +10,13 @@
                         <div class="w-full flex flex-row flex-wrap">
                             <div class="w-1/3 leading-loose text-xl text-white">
                                 {{ company.industry.name }}
-                                
                             </div>
                             <div class="w-1/3 leading-loose text-xl text-white">
-                            <span v-html="company.description"></span>
+                                <span v-html="company.description"></span>
                             </div>
                             <div class="w-1/3 leading-loose text-xl text-white">
-                            ({{ company.responses.length }}) reviews
-                            </div>
-                               
+                                ({{ company.responses.length }}) reviews
+                            </div>  
                         </div>
                     </div>
                 </div>

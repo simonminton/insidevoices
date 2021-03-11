@@ -3660,8 +3660,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -26960,7 +26958,7 @@ var render = function() {
                       _vm._v(
                         "\n                            " +
                           _vm._s(_vm.company.industry.name) +
-                          "\n                            \n                        "
+                          "\n                        "
                       )
                     ]
                   ),
@@ -26980,7 +26978,7 @@ var render = function() {
                     { staticClass: "w-1/3 leading-loose text-xl text-white" },
                     [
                       _vm._v(
-                        "\n                        (" +
+                        "\n                            (" +
                           _vm._s(_vm.company.responses.length) +
                           ") reviews\n                        "
                       )
