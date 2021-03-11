@@ -3655,6 +3655,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -26909,7 +26916,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "w-full h-full flex flex-row flex-wrap items-center pt-4 md:pt-12 xl:pt-32 xl:pr-12 pb-4 "
+                "w-full h-full flex flex-row flex-wrap items-center pt-4 md:pt-12 xl:pt-16 xl:pr-12 pb-4 "
             },
             [
               !_vm.company.logo
@@ -26942,36 +26949,48 @@ var render = function() {
                     staticClass:
                       "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
                   },
-                  [
-                    _vm._v(_vm._s(_vm.company.name) + " "),
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          " font-sans font-normal tracking-normal leading-loose text-xl text-white"
-                      },
-                      [
-                        _vm._v(
-                          "(" +
-                            _vm._s(_vm.company.responses.length) +
-                            ") reviews"
-                        )
-                      ]
-                    )
-                  ]
+                  [_vm._v(_vm._s(_vm.company.name) + " ")]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "leading-loose text-xl text-white" }, [
-                  _vm._v(
-                    "\n                       " +
-                      _vm._s(_vm.company.industry.name) +
-                      "\n                       "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", {
-                    domProps: { innerHTML: _vm._s(_vm.company.description) }
-                  })
+                _c("div", { staticClass: "flex flex-row flex-wrap" }, [
+                  _c(
+                    "div",
+                    { staticClass: "w-1/3 leading-loose text-xl text-white" },
+                    [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.company.industry.name) +
+                          "\n                            \n                            \n                        "
+                      ),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "w-1/3 leading-loose text-xl text-white"
+                        },
+                        [
+                          _c("span", {
+                            domProps: {
+                              innerHTML: _vm._s(_vm.company.description)
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "w-1/3 leading-loose text-xl text-white"
+                        },
+                        [
+                          _vm._v(
+                            "\n                        (" +
+                              _vm._s(_vm.company.responses.length) +
+                              ") reviews\n                        "
+                          )
+                        ]
+                      )
+                    ]
+                  )
                 ])
               ])
             ]
