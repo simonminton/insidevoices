@@ -5,20 +5,20 @@
                 <div class="w-full h-full flex flex-row flex-wrap items-center pt-4 md:pt-12 xl:pt-16 xl:pr-12 pb-4 ">
                     <div v-if="!company.logo" class="flex w-32 h-32 justify-center items-center text-white bg-black"></div>
                     <div v-if="company.logo" class="flex w-32 h-32 justify-center items-center text-white"><img :src="'/storage/'+company.logo" class="w-full " /></div>
-                    <div class="pl-8 flex">
+                    <div class="pl-8 flex flex-row flex-wrap">
                         <h1 class="font-title w-full text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide">{{ company.name }} </h1>
                         <div class="w-full flex flex-row flex-wrap">
                             <div class="w-1/3 leading-loose text-xl text-white">
                                 {{ company.industry.name }}
                                 
-                                
+                            </div>
                             <div class="w-1/3 leading-loose text-xl text-white">
                             <span v-html="company.description"></span>
                             </div>
                             <div class="w-1/3 leading-loose text-xl text-white">
                             ({{ company.responses.length }}) reviews
                             </div>
-                            </div>     
+                               
                         </div>
                     </div>
                 </div>

@@ -26942,7 +26942,7 @@ var render = function() {
                   )
                 : _vm._e(),
               _vm._v(" "),
-              _c("div", { staticClass: "pl-8 flex" }, [
+              _c("div", { staticClass: "pl-8 flex flex-row flex-wrap" }, [
                 _c(
                   "h1",
                   {
@@ -26960,34 +26960,29 @@ var render = function() {
                       _vm._v(
                         "\n                            " +
                           _vm._s(_vm.company.industry.name) +
-                          "\n                            \n                            \n                        "
-                      ),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "w-1/3 leading-loose text-xl text-white"
-                        },
-                        [
-                          _c("span", {
-                            domProps: {
-                              innerHTML: _vm._s(_vm.company.description)
-                            }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "w-1/3 leading-loose text-xl text-white"
-                        },
-                        [
-                          _vm._v(
-                            "\n                        (" +
-                              _vm._s(_vm.company.responses.length) +
-                              ") reviews\n                        "
-                          )
-                        ]
+                          "\n                            \n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-1/3 leading-loose text-xl text-white" },
+                    [
+                      _c("span", {
+                        domProps: { innerHTML: _vm._s(_vm.company.description) }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-1/3 leading-loose text-xl text-white" },
+                    [
+                      _vm._v(
+                        "\n                        (" +
+                          _vm._s(_vm.company.responses.length) +
+                          ") reviews\n                        "
                       )
                     ]
                   )
