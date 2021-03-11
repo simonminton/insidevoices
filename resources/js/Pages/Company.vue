@@ -35,7 +35,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">People of color are well-represented in my company’s leadership.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q1 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q1 }}</h4>
                             </div>
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg" v-for="(response, index) in company.responses" v-bind:key="response.id">
                             {{ response.story1 }}
@@ -45,7 +45,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap ">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md  mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">My company is racially diverse.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q2 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q2 }}</h4>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story2 }}
@@ -55,7 +55,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">In my opinion, people of color can be themselves at my company.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q3 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q3 }}</h4>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story3 }}
@@ -64,7 +64,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">Race has an impact on performance reviews or compensation at my company.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q4 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q4 }}</h4>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story4 }}
@@ -73,7 +73,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">My company’s leadership cares about issues that specifically affect people of color.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q5 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q5 }}</h4>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story5 }}
@@ -82,7 +82,7 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">People of color receive equal treatment at my company.</h4>
-                                <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q6 }}</h5>
+                                <h4 class="w-full font-bold text-4xl font-title text-green">{{ company.common_response.q6 }}</h4>
                             </div>
                             <div v-for="(response, index) in company.responses" v-bind:key="response.id" class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg">
                                 {{ response.story6 }}

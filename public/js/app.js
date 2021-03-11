@@ -27085,10 +27085,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q1))]
                             )
@@ -27142,10 +27142,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q2))]
                             )
@@ -27203,10 +27203,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q3))]
                             )
@@ -27264,10 +27264,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q4))]
                             )
@@ -27325,10 +27325,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q5))]
                             )
@@ -27386,10 +27386,10 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c(
-                              "h5",
+                              "h4",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-2xl font-title"
+                                  "w-full font-bold text-4xl font-title text-green"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q6))]
                             )
