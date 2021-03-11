@@ -26942,17 +26942,17 @@ var render = function() {
                   )
                 : _vm._e(),
               _vm._v(" "),
-              _c("div", { staticClass: "pl-8" }, [
+              _c("div", { staticClass: "pl-8 flex" }, [
                 _c(
                   "h1",
                   {
                     staticClass:
-                      "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
+                      "font-title w-full text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
                   },
                   [_vm._v(_vm._s(_vm.company.name) + " ")]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "flex flex-row flex-wrap" }, [
+                _c("div", { staticClass: "w-full flex flex-row flex-wrap" }, [
                   _c(
                     "div",
                     { staticClass: "w-1/3 leading-loose text-xl text-white" },
