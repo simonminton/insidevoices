@@ -3655,7 +3655,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -26943,7 +26942,20 @@ var render = function() {
                     staticClass:
                       "font-title text-6xl md:text-7xl mb-4 text-white font-semibold leading-tight tracking-wide"
                   },
-                  [_vm._v(_vm._s(_vm.company.name))]
+                  [
+                    _vm._v(_vm._s(_vm.company.name) + " "),
+                    _c(
+                      "span",
+                      { staticClass: "leading-loose text-xl text-white" },
+                      [
+                        _vm._v(
+                          "(" +
+                            _vm._s(_vm.company.responses.length) +
+                            ") reviews"
+                        )
+                      ]
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("div", { staticClass: "leading-loose text-xl text-white" }, [
@@ -26956,14 +26968,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("span", {
                     domProps: { innerHTML: _vm._s(_vm.company.description) }
-                  }),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n                       (" +
-                      _vm._s(_vm.company.responses.length) +
-                      ") reviews\n                    "
-                  )
+                  })
                 ])
               ])
             ]
