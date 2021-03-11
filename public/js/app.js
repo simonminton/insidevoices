@@ -26961,7 +26961,7 @@ var render = function() {
                   _c("br"),
                   _vm._v(
                     "\n                       (" +
-                      _vm._s(_vm.company.reponses.length) +
+                      _vm._s(_vm.company.responses.length) +
                       ") reviews\n                    "
                   )
                 ])

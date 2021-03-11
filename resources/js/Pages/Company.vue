@@ -12,7 +12,7 @@
                            <br>
                            <span v-html="company.description"></span>
                            <br>
-                           ({{ company.reponses.length }}) reviews
+                           ({{ company.responses.length }}) reviews
                         </div>
                     </div>
                 </div>
