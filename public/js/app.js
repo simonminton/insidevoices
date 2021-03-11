@@ -3653,11 +3653,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -27160,15 +27155,6 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
                                   "w-full text-black font-semibold text-2xl font-title"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q2))]
@@ -27224,15 +27210,6 @@ var render = function() {
                                   "In my opinion, people of color can be themselves at my company."
                                 )
                               ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
                             ),
                             _vm._v(" "),
                             _c(
@@ -27300,15 +27277,6 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
                                   "w-full text-black font-semibold text-2xl font-title"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q4))]
@@ -27370,15 +27338,6 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
                                   "w-full text-black font-semibold text-2xl font-title"
                               },
                               [_vm._v(_vm._s(_vm.company.common_response.q5))]
@@ -27434,15 +27393,6 @@ var render = function() {
                                   "People of color receive equal treatment at my company."
                                 )
                               ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
                             ),
                             _vm._v(" "),
                             _c(
