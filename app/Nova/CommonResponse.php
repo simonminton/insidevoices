@@ -50,59 +50,13 @@ class CommonResponse extends Resource
             
             BelongsTo::make('Company')->nullable(),
            
-            Select::make('q1')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
-
-            Select::make('q2')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
-
-            Select::make('q3')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
-
-            Select::make('q4')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
-
-            Select::make('q5')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
-
-            Select::make('q6')->options([
-                'Not Answered' => 'Not Answered',
-                'Strongly disagree' => 'Strongly disagree',
-                'Disagree' => 'Disagree',
-                'Neither agree nor disagree' => 'Neither agree nor disagree',
-                'Agree' => 'Agree',
-                'Strongly agree' => 'Strongly agree',
-            ])->displayUsingLabels(),
+            
+            Text::make('q1'),
+            Text::make('q2'),
+            Text::make('q3'),
+            Text::make('q4'),
+            Text::make('q5'),
+            Text::make('q6'),
 
             
             
