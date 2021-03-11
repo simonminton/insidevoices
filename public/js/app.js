@@ -3652,7 +3652,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -27083,15 +27082,6 @@ var render = function() {
                                   "People of color are well-represented in my company’s leadership."
                                 )
                               ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "w-full text-black font-semibold text-3xl font-title"
-                              },
-                              [_vm._v("Most common answer")]
                             ),
                             _vm._v(" "),
                             _c(

@@ -35,7 +35,6 @@
                         <div class="w-4/5 pl-8 pb-12 flex flex-row flex-wrap">
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md mb-4">
                                 <h4 class="w-full text-black font-bold text-4xl font-title">People of color are well-represented in my company’s leadership.</h4>
-                                <h5 class="w-full text-black font-semibold text-3xl font-title">Most common answer</h5>
                                 <h5 class="w-full text-black font-semibold text-2xl font-title">{{ company.common_response.q1 }}</h5>
                             </div>
                             <div class="bg-white px-8 py-6 w-full flex flex-row flex-wrap shadow-md rounded-md text-lg" v-for="(response, index) in company.responses" v-bind:key="response.id">
